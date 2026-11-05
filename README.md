@@ -1,7 +1,7 @@
  <div align="center">
 
 # HAULECTRA ── ⟡
-<img width="800" height="400" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
+<img width="500" height="200" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
 
 
 
