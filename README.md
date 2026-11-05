@@ -1,11 +1,11 @@
  <div align="center">
 
-# HAULECTRA ── ⟡
+# ⟡ ── HAULECTRA ── ⟡
 <img width="500" height="200" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
 </div>
 
 ## ↳ Deskripsi Singkat 
-Haulectra adalah aplikasi toko online yang membantu pemilik toko mengelola jualannya di satu tempat, sekaligus memudahkan pelanggan berbelanja tanpa harus datang ke toko. Pelanggan bisa melihat katalog produk, memasukkan barang ke keranjang, memakai voucher diskon, memilih metode pembayaran, dan melacak pesanannya sampai paket tiba. Sementara itu, admin toko bisa mengelola produk dan stok, mengatur promo, memantau pesanan dan pengiriman, serta melihat data pelanggan
+Haulectra merupakan perusahaan yang bergerak di bidang *e-commerce* dengan menyediakan layanan penjualan online untuk membantu pemilik toko mengelola kegiatan penjualannya dalam satu tempat, sekaligus memudahkan pelanggan berbelanja tanpa harus datang langsung ke toko. Pelanggan dapat melihat katalog produk, memasukkan barang ke keranjang, menggunakan voucher diskon, memilih metode pembayaran, dan melacak pesanan hingga paket tiba. Sementara itu, admin toko dapat mengelola produk dan stok, mengatur promosi, memantau pesanan dan pengiriman, serta melihat data pelanggan.
 
 ## ↳ Fitur Utama Program <br>
 ### Pelanggan
@@ -128,8 +128,18 @@ Haulectra adalah aplikasi toko online yang membantu pemilik toko mengelola juala
 </details>
 
 ### ERD
+<details>
+  <summary>ERD Logical</summary>
+<img width="1352" height="604" alt="Picture1" src="https://github.com/user-attachments/assets/31f5a704-1a90-4ee9-9fec-63d2bf2f4141" />
+</details>
+
+<details>
+  <summary>ERD Relational</summary>
+<img width="1427" height="601" alt="Picture2" src="https://github.com/user-attachments/assets/95b0b785-63aa-42ae-a287-ef9f5451b1a0" />
+</details>
 
 ## ↳ Struktur Program/Package
+
 
 ## ↳ 4 Pilar OOP
 
