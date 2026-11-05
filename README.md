@@ -59,12 +59,12 @@ Haulectra adalah aplikasi toko online yang membantu pemilik toko mengelola juala
 ### Flowchart
 <details>
   <summary>1. Flowchart Menu login</summary>
-  <img width="500" height="497" alt="Capston-Menu Login drawio (2)" src="https://github.com/user-attachments/assets/584ee523-f9c7-4313-a13c-e035515e1d8c" />
+  <img width="600" height="497" alt="Capston-Menu Login drawio (2)" src="https://github.com/user-attachments/assets/584ee523-f9c7-4313-a13c-e035515e1d8c" />
 </details>
 
 <details>
   <summary>2. Flowchart Menu Admin</summary>
-  <img width="677" height="287" alt="Capston-Menu Admin drawio (1)" src="https://github.com/user-attachments/assets/e33ba98d-3635-4981-9c24-a1b57a000e3c" />
+  <img width="877" height="387" alt="Capston-Menu Admin drawio (1)" src="https://github.com/user-attachments/assets/e33ba98d-3635-4981-9c24-a1b57a000e3c" />
 </details>
 
 ## ↳ Struktur Program/Package
