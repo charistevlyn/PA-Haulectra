@@ -56,6 +56,16 @@ Haulectra adalah aplikasi toko online yang membantu pemilik toko mengelola juala
 ## ↳ Tech Stack
 
 ## ↳ Perancangan Sistem
+### Flowchart
+<details>
+  <summary>1. Flowchart Menu login</summary>
+  <img width="500" height="497" alt="Capston-Menu Login drawio (2)" src="https://github.com/user-attachments/assets/584ee523-f9c7-4313-a13c-e035515e1d8c" />
+</details>
+
+<details>
+  <summary>2. Flowchart Menu Admin</summary>
+  <img width="677" height="287" alt="Capston-Menu Admin drawio (1)" src="https://github.com/user-attachments/assets/e33ba98d-3635-4981-9c24-a1b57a000e3c" />
+</details>
 
 ## ↳ Struktur Program/Package
 
@@ -63,4 +73,10 @@ Haulectra adalah aplikasi toko online yang membantu pemilik toko mengelola juala
 
 ## ↳ Alur Program
 
-## ↳ 
+## ↳ Anggota Kelompok 1
+
+1. Alif Anugrah Ramadhan [2509116019]
+2. Syavira Firnanda Prawiro [2509116072]
+3. Hanif Amelia Putri [2509116075]
+4. Charist Evlyn Myscha Rerung [2509116102]
+
