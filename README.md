@@ -1,6 +1,6 @@
  <div align="center">
 
-# HAULECTRA
+# HAULECTRA ── ⟡
 <img width="400" height="100" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
 
 
@@ -16,18 +16,18 @@ Haulectra adalah aplikasi toko online yang membantu pemilik toko mengelola juala
 | Fitur | Penjelasan |
 |---|---|
 | Login | Masuk menggunakan username dan password. Sistem memeriksa akun dan mengarahkan pengguna sesuai perannya. |
-| Registrasi akun | Membuat akun baru dengan mengisi data yang diperlukan. Sistem memvalidasi data dan memastikan username belum digunakan. |
+| Registrasi akun | Membuat akun baru dengan mengisi data yang diperlukan kemmudian sistem akan memvalidasi data dan memastikan username belum digunakan. |
 | Melihat beranda | Menampilkan halaman utama sebagai akses ke katalog, keranjang, riwayat pesanan, dan profil. |
 | Melihat katalog produk | Menampilkan seluruh produk yang tersedia beserta informasinya. |
 | Mencari & memfilter produk | Mencari produk berdasarkan nama dan menyaring produk berdasarkan kategori. |
 | Melihat keranjang belanja | Menampilkan daftar produk yang telah dipilih sebelum pembelian. |
-| Mengelola keranjang | Menambah, mengubah jumlah, atau menghapus produk. Sistem menyesuaikan jumlah dengan stok tersedia. |
+| Mengelola keranjang | Menambah, mengubah jumlah, atau menghapus produk kemudian sistem akan menyesuaikan jumlah dengan stok tersedia. |
 | Checkout & pembayaran | Menampilkan ringkasan belanja, menghitung total, menyimpan pesanan dan pembayaran, serta mengurangi stok produk. |
 | Memilih metode pembayaran | Memilih metode pembayaran melalui transfer atau e-wallet. |
 | Membuat pesanan | Menyimpan data pesanan beserta rincian produk dalam satu transaksi. |
 | Memasukkan kode voucher | Memasukkan voucher secara opsional. Sistem memeriksa kode, minimal jumlah barang, dan masa berlaku sebelum memberikan diskon. |
-| Melihat riwayat pesanan | Menampilkan seluruh pesanan milik pelanggan yang sedang login. |
-| Membatalkan pesanan | Membatalkan pesanan dengan mengubah statusnya menjadi Dibatalkan. |
+| Melihat riwayat pesanan | Menampilkan seluruh pesanan yang pernah dilakukan oleh pelanggan. |
+| Membatalkan pesanan | Membatalkan pesanan dengan mengubah statusnya menjadi Pesanan Dibatalkan. |
 | Melacak pesanan | Menampilkan nomor resi, perkiraan tanggal tiba, dan status pengiriman. |
 | Mengonfirmasi barang diterima | Mengonfirmasi penerimaan barang sehingga status pengiriman berubah menjadi Diterima. |
 | Melihat profil | Menampilkan nama, username, alamat, dan nomor telepon pelanggan. |
@@ -52,8 +52,6 @@ Haulectra adalah aplikasi toko online yang membantu pemilik toko mengelola juala
 | Melihat daftar pesanan | Menampilkan seluruh pesanan pelanggan serta memperbarui status pesanan dan mengonfirmasi pembayaran secara manual. |
 | Melihat data pelanggan | Menampilkan daftar pelanggan yang telah terdaftar tanpa fitur pengubahan data. |
 | Logout | Mengakhiri sesi admin dan kembali ke halaman login. |
-
-<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
 
 ## ↳ Tech Stack
 
