@@ -2,11 +2,7 @@
 
 # HAULECTRA ── ⟡
 <img width="500" height="200" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
-
-
-
 </div>
-
 
 ## ↳ Deskripsi Singkat 
 Haulectra adalah aplikasi toko online yang membantu pemilik toko mengelola jualannya di satu tempat, sekaligus memudahkan pelanggan berbelanja tanpa harus datang ke toko. Pelanggan bisa melihat katalog produk, memasukkan barang ke keranjang, memakai voucher diskon, memilih metode pembayaran, dan melacak pesanannya sampai paket tiba. Sementara itu, admin toko bisa mengelola produk dan stok, mengatur promo, memantau pesanan dan pengiriman, serta melihat data pelanggan
@@ -124,6 +120,14 @@ Haulectra adalah aplikasi toko online yang membantu pemilik toko mengelola juala
   <summary>6. Flowchart Menu Pelanggan Profil </summary>
 <img width="727" height="1000" alt="Capston-Menu Pelanggan_Profil drawio" src="https://github.com/user-attachments/assets/411c0707-1c68-4fcc-a9dd-02d947490cdf" />
 </details>
+
+### Use Case Diagram
+<details>
+  <summary>Use Case Diagram HAULECTRA</summary>
+ <img width="1136" height="967" alt="Use_Case_Diagram_Capstone drawio" src="https://github.com/user-attachments/assets/5355cf64-1c74-4685-9d9d-b3910b4cb5b8" />
+</details>
+
+### ERD
 
 ## ↳ Struktur Program/Package
 
