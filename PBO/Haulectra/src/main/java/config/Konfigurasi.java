@@ -20,6 +20,6 @@ public class Konfigurasi {
 
     public static final BigDecimal ONGKOS_KIRIM = new BigDecimal("20000");
     public static final int BATAS_BAYAR_JAM = 24;
-    public static final int ESTIMASI_KIRIM_HARI = 3;            // estimasi tiba setelah dikirim
-    public static final int UKURAN_GAMBAR_MAKS = 2 * 1024 * 1024;  // 2 MB (kolom MEDIUMBLOB)
+    public static final int ESTIMASI_KIRIM_HARI = 3;            
+    public static final int UKURAN_GAMBAR_MAKS = 2 * 1024 * 1024;  
 }
