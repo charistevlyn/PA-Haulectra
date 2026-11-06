@@ -205,6 +205,7 @@ HaulApp/
 ```
 
 ## ↳ 4 Pilar OOP
+
 ### Encspsulation
 
 ### Inheritance
