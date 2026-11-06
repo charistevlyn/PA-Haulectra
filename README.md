@@ -55,7 +55,112 @@ Haulectra merupakan perusahaan yang bergerak di bidang *e-commerce* dengan menye
 | Logout | Mengakhiri sesi admin dan kembali ke halaman login. |
 
 ## ↳ Tech Stack
+## 🛠️ Tech Stack
 
+Teknologi yang digunakan dalam proses pengembangan aplikasi Haulectra meliputi:
+
+```html
+<table>
+    <thead>
+        <tr>
+            <th width="20%">Kategori</th>
+            <th width="25%">Teknologi</th>
+            <th width="55%">Keterangan</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Bahasa Pemrograman</td>
+            <td><b>Java 17</b></td>
+            <td>Digunakan untuk membangun logika aplikasi dan menerapkan konsep OOP.</td>
+        </tr>
+        <tr>
+            <td>GUI</td>
+            <td><b>Java Swing</b></td>
+            <td>Digunakan untuk membuat antarmuka aplikasi desktop, seperti halaman login, form, tabel, dan dialog.</td>
+        </tr>
+        <tr>
+            <td>Database</td>
+            <td><b>MySQL 8</b></td>
+            <td>Digunakan untuk menyimpan dan mengelola data pengguna, produk, promo, pesanan, pembayaran, dan pengiriman.</td>
+        </tr>
+        <tr>
+            <td>Database Driver</td>
+            <td><b>MySQL Connector/J</b></td>
+            <td>Digunakan untuk menghubungkan aplikasi Java dengan database MySQL.</td>
+        </tr>
+        <tr>
+            <td>Build Tool</td>
+            <td><b>Apache Maven</b></td>
+            <td>Digunakan untuk mengelola library atau dependency serta proses build project.</td>
+        </tr>
+        <tr>
+            <td>IDE</td>
+            <td><b>Apache NetBeans</b></td>
+            <td>Digunakan sebagai lingkungan pengembangan dan penulisan kode Java.</td>
+        </tr>
+        <tr>
+            <td>Arsitektur</td>
+            <td><b>MVC dan DAO</b></td>
+            <td>Memisahkan bagian tampilan, pengelolaan alur program, model data, dan akses database.</td>
+        </tr>
+        <tr>
+            <td>Version Control</td>
+            <td><b>Git dan GitHub</b></td>
+            <td>Digunakan untuk mengelola perubahan kode dan menyimpan project dalam repository.</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## 💻 Aplikasi dan Tools Pendukung
+
+Selain teknologi utama, terdapat beberapa aplikasi pendukung yang digunakan selama proses pengembangan, dokumentasi, desain, dan koordinasi project Haulectra.
+
+```html
+<table>
+    <thead>
+        <tr>
+            <th width="25%">Aplikasi</th>
+            <th width="75%">Keterangan</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Apache NetBeans</b></td>
+            <td>Digunakan untuk menulis, menjalankan, dan mengelola kode program Java.</td>
+        </tr>
+        <tr>
+            <td><b>Git</b></td>
+            <td>Digunakan untuk mengelola perubahan kode serta mencatat pembaruan project.</td>
+        </tr>
+        <tr>
+            <td><b>GitHub</b></td>
+            <td>Digunakan untuk menyimpan repository project dan mendukung kolaborasi antaranggota tim.</td>
+        </tr>
+        <tr>
+            <td><b>Google Chrome</b></td>
+            <td>Digunakan untuk mengakses GitHub, dokumentasi, dan referensi pengembangan program.</td>
+        </tr>
+        <tr>
+            <td><b>Microsoft Word</b></td>
+            <td>Digunakan untuk menyusun laporan dan dokumentasi project.</td>
+        </tr>
+        <tr>
+            <td><b>Microsoft Excel</b></td>
+            <td>Digunakan untuk membantu mengolah dan menyusun data selama pengerjaan project.</td>
+        </tr>
+        <tr>
+            <td><b>Canva</b></td>
+            <td>Digunakan untuk membuat desain visual, seperti logo, poster, dan kebutuhan presentasi project.</td>
+        </tr>
+        <tr>
+            <td><b>WhatsApp</b></td>
+            <td>Digunakan sebagai media komunikasi dan koordinasi antaranggota tim selama proses pengerjaan project.</td>
+        </tr>
+    </tbody>
+</table>
+```
 ## ↳ Perancangan Sistem
 ### Flowchart
 **Login**
@@ -207,14 +312,113 @@ HaulApp/
 ## ↳ 4 Pilar OOP
 
 ### Encspsulation
+Pada program Haul, class Pengguna digunakan untuk menyimpan informasi akun yang dimiliki oleh admin maupun pelanggan. Atribut seperti id, nama, username, dan password dibuat private agar data akun tidak dapat diakses atau diubah secara langsung oleh class lain. Untuk mengakses dan mengubah data tertentu, program menggunakan getter dan setter yang telah disediakan. Khusus untuk password, program menyediakan method cocokPassword() untuk memeriksa kesesuaian password saat pengguna melakukan login, sehingga proses pengecekan dilakukan langsung di dalam class Pengguna. <br>
 
+Contoh implementasi enkapsulasi pada kelas Pengguna:
+```java
+public abstract class Pengguna {
+    private int id;
+    private String nama;
+    private String username;
+    private String password;
+
+    protected Pengguna(int id, String nama, String username, String password) {
+        this.id = id;
+        this.nama = nama;
+        this.username = username;
+        this.password = password;
+    }
+
+    public abstract String getPeran();
+
+    public abstract String getKeterangan();
+
+    public boolean cocokPassword(String input) {
+        return password.equals(input);
+    }
+
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+    public String getNama() { return nama; }
+    public void setNama(String nama) { this.nama = nama; }
+    public String getUsername() { return username; }
+    public void setUsername(String username) { this.username = username; }
+
+    String getPassword() { return password; }
+}
+```
+ 
 ### Inheritance
+Inheritance merupakan konsep OOP yang memungkinkan sebuah class mewarisi atribut dan metode dari class lain menggunakan extends. Class yang memberikan pewarisan disebut superclass, sedangkan class yang menerima pewarisan disebut subclass. Konsep ini membantu mengurangi penulisan kode yang berulang karena atribut dan metode yang sama cukup didefinisikan pada class induk.
 
+Pada program Haulectra ini, konsep pewarisan diterapkan pada pengelolaan akun admin dan pelanggan. Kedua class tersebut mewarisi atribut serta metode dari class Pengguna, sehingga memiliki struktur dasar akun yang sama. Perbedaannya terletak pada atribut tambahan dan peran masing-masing akun di dalam program.
+
+Contoh implementasi kode:
+```java
+public class Admin extends Pengguna {
+
+    private String jabatan;
+    private String noPegawai;
+
+    public Admin(int id, String nama, String username, String password, String jabatan, String noPegawai) {
+        super(id, nama, username, password);
+        this.jabatan = jabatan;
+        this.noPegawai = noPegawai;
+    }
+
+    @Override
+    public String getPeran() { return "ADMIN"; }
+
+    @Override
+    public String getKeterangan() { return getNama() + ", " + jabatan; }
+    public String getJabatan() { return jabatan; }
+    public String getNoPegawai() { return noPegawai; }
+}
+```
 ### Polymorphism
+Polymorphism merupakan konsep OOP yang memungkinkan suatu metode memiliki cara kerja yang berbeda sesuai dengan objek atau parameter yang digunakan. Konsep ini dapat diterapkan melalui overriding, yaitu menimpa metode dari class induk, dan overloading, yaitu menggunakan nama metode yang sama dengan parameter berbeda.
 
+Pada program Haulectra, konsep ini diterapkan dalam pengelolaan voucher promo. Program menyediakan dua jenis voucher, yaitu persentase dan nominal, yang memiliki cara perhitungan diskon berbeda meskipun menggunakan nama metode yang sama. Selain itu, program juga menggunakan overloading untuk menampilkan format tanggal sesuai dengan jenis data yang diterima.
+Contoh implementasi overriding:
+```java
+ public static class Persen extends Promo {
+        @Override
+        public BigDecimal hitungPotongan(BigDecimal subtotal) {
+            return subtotal.multiply(getDiskon()).divide(BigDecimal.valueOf(100), 0, RoundingMode.HALF_UP);
+        }
+        @Override public char getJenis() { return 'P'; }
+        @Override public String getTeksDiskon() { return getDiskon().stripTrailingZeros().toPlainString() + "%"; }
+    }
+
+    public static class Nominal extends Promo {
+        @Override
+        public BigDecimal hitungPotongan(BigDecimal subtotal) {
+            return getDiskon().min(subtotal);   
+        }
+        @Override public char getJenis() { return 'N'; }
+        @Override public String getTeksDiskon() { return "Rp" + String.format("%,d", getDiskon().longValue()).replace(',', '.'); }
+    }
+```
+Contoh implementasi overloading:
+```java
+public static String tanggal(LocalDateTime waktu) {
+        return waktu == null ? "-" : waktu.format(DateTimeFormatter.ofPattern("dd MMM yyyy, HH.mm", ID));
+    }
+
+    public static String tanggal(LocalDate tgl) {
+        return tgl == null ? "-" : tgl.format(DateTimeFormatter.ofPattern("dd MMM yyyy", ID));
+    }
+```
 ### Abstraction
+Abstraction merupakan konsep OOP yang digunakan untuk menyederhanakan struktur program dengan menampilkan fungsi utama dan menyembunyikan detail proses di dalamnya. Penerapannya dapat menggunakan abstract class dan interface yang berfungsi sebagai dasar atau aturan bagi class lain.
 
+Pada program Haulectra, konsep ini diterapkan melalui abstract class Pengguna yang menetapkan metode dasar untuk membedakan peran admin dan pelanggan. Selain itu, interface DAO digunakan sebagai pedoman dalam proses pengelolaan data produk, promo, pesanan, dan pengguna ke database. Dengan demikian, bagian program lain cukup menggunakan fungsi yang sudah disediakan tanpa harus mengetahui seluruh detail proses di dalamnya.
+Contoh implementasi abstract class:
+```java
+public abstract String getPeran();
 
+public abstract String getKeterangan()
+```
 ## ↳ Alur Program
 
 ## ↳ Anggota Kelompok 
