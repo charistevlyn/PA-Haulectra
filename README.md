@@ -205,6 +205,14 @@ HaulApp/
 ```
 
 ## ↳ 4 Pilar OOP
+### Encspsulation
+
+### Inheritance
+
+### Polymorphism
+
+### Abstraction
+
 
 ## ↳ Alur Program
 
