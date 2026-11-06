@@ -55,112 +55,18 @@ Haulectra merupakan perusahaan yang bergerak di bidang *e-commerce* dengan menye
 | Logout | Mengakhiri sesi admin dan kembali ke halaman login. |
 
 ## ↳ Tech Stack
-## 🛠️ Tech Stack
+
 
 Teknologi yang digunakan dalam proses pengembangan aplikasi Haulectra meliputi:
+| Kategori | Teknologi | Keterangan |
+|---|---|---|
+| Bahasa Pemrograman | **Java 17** | Digunakan untuk membangun logika aplikasi dan menerapkan konsep OOP. |
+| GUI | **Java Swing** | Digunakan untuk membuat antarmuka aplikasi desktop, seperti halaman login, form, tabel, dan dialog. |
+| Database | **MySQL 8** | Digunakan untuk menyimpan dan mengelola data pengguna, produk, promo, pesanan, pembayaran, dan pengiriman. |
+| Database Driver | **MySQL Connector/J** | Digunakan untuk menghubungkan aplikasi Java dengan database MySQL. |
+| Build Tool | **Apache Maven** | Digunakan untuk mengelola dependency dan proses build project. |
+| Arsitektur | **MVC dan DAO** | Digunakan untuk memisahkan bagian tampilan, pengelolaan alur program, model data, dan akses database. |
 
-```html
-<table>
-    <thead>
-        <tr>
-            <th width="20%">Kategori</th>
-            <th width="25%">Teknologi</th>
-            <th width="55%">Keterangan</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Bahasa Pemrograman</td>
-            <td><b>Java 17</b></td>
-            <td>Digunakan untuk membangun logika aplikasi dan menerapkan konsep OOP.</td>
-        </tr>
-        <tr>
-            <td>GUI</td>
-            <td><b>Java Swing</b></td>
-            <td>Digunakan untuk membuat antarmuka aplikasi desktop, seperti halaman login, form, tabel, dan dialog.</td>
-        </tr>
-        <tr>
-            <td>Database</td>
-            <td><b>MySQL 8</b></td>
-            <td>Digunakan untuk menyimpan dan mengelola data pengguna, produk, promo, pesanan, pembayaran, dan pengiriman.</td>
-        </tr>
-        <tr>
-            <td>Database Driver</td>
-            <td><b>MySQL Connector/J</b></td>
-            <td>Digunakan untuk menghubungkan aplikasi Java dengan database MySQL.</td>
-        </tr>
-        <tr>
-            <td>Build Tool</td>
-            <td><b>Apache Maven</b></td>
-            <td>Digunakan untuk mengelola library atau dependency serta proses build project.</td>
-        </tr>
-        <tr>
-            <td>IDE</td>
-            <td><b>Apache NetBeans</b></td>
-            <td>Digunakan sebagai lingkungan pengembangan dan penulisan kode Java.</td>
-        </tr>
-        <tr>
-            <td>Arsitektur</td>
-            <td><b>MVC dan DAO</b></td>
-            <td>Memisahkan bagian tampilan, pengelolaan alur program, model data, dan akses database.</td>
-        </tr>
-        <tr>
-            <td>Version Control</td>
-            <td><b>Git dan GitHub</b></td>
-            <td>Digunakan untuk mengelola perubahan kode dan menyimpan project dalam repository.</td>
-        </tr>
-    </tbody>
-</table>
-```
-
-## 💻 Aplikasi dan Tools Pendukung
-
-Selain teknologi utama, terdapat beberapa aplikasi pendukung yang digunakan selama proses pengembangan, dokumentasi, desain, dan koordinasi project Haulectra.
-
-```html
-<table>
-    <thead>
-        <tr>
-            <th width="25%">Aplikasi</th>
-            <th width="75%">Keterangan</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><b>Apache NetBeans</b></td>
-            <td>Digunakan untuk menulis, menjalankan, dan mengelola kode program Java.</td>
-        </tr>
-        <tr>
-            <td><b>Git</b></td>
-            <td>Digunakan untuk mengelola perubahan kode serta mencatat pembaruan project.</td>
-        </tr>
-        <tr>
-            <td><b>GitHub</b></td>
-            <td>Digunakan untuk menyimpan repository project dan mendukung kolaborasi antaranggota tim.</td>
-        </tr>
-        <tr>
-            <td><b>Google Chrome</b></td>
-            <td>Digunakan untuk mengakses GitHub, dokumentasi, dan referensi pengembangan program.</td>
-        </tr>
-        <tr>
-            <td><b>Microsoft Word</b></td>
-            <td>Digunakan untuk menyusun laporan dan dokumentasi project.</td>
-        </tr>
-        <tr>
-            <td><b>Microsoft Excel</b></td>
-            <td>Digunakan untuk membantu mengolah dan menyusun data selama pengerjaan project.</td>
-        </tr>
-        <tr>
-            <td><b>Canva</b></td>
-            <td>Digunakan untuk membuat desain visual, seperti logo, poster, dan kebutuhan presentasi project.</td>
-        </tr>
-        <tr>
-            <td><b>WhatsApp</b></td>
-            <td>Digunakan sebagai media komunikasi dan koordinasi antaranggota tim selama proses pengerjaan project.</td>
-        </tr>
-    </tbody>
-</table>
-```
 ## ↳ Perancangan Sistem
 ### Flowchart
 **Login**
