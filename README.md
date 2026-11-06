@@ -1,8 +1,13 @@
  <div align="center">
+  
+# <p align="center"> ୨ৎ HAULECTRA ── ⟡
 
-# ୨ৎ HAULECTRA ── ⟡
-<img width="500" height="200" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
+<p align="center"><em>Sistem Penjualan Online dengan pengelolaan Produk, Stok dan Promo</em></p>
+
+<p align="center">
+<img width="800" height="200" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
 </div>
+
 
 ---
 Haulectra merupakan perusahaan yang bergerak di bidang *e-commerce* dengan menyediakan layanan penjualan online untuk membantu pemilik toko mengelola kegiatan penjualannya dalam satu tempat, sekaligus memudahkan pelanggan berbelanja tanpa harus datang langsung ke toko. Pelanggan dapat melihat katalog produk, memasukkan barang ke keranjang, menggunakan voucher diskon, memilih metode pembayaran, dan melacak pesanan hingga paket tiba. Sementara itu, admin toko dapat mengelola produk dan stok, mengatur promosi, memantau pesanan dan pengiriman, serta melihat data pelanggan.
