@@ -1,6 +1,6 @@
  <div align="center">
 
-# ⟡ ── HAULECTRA ── ⟡
+# ୨ৎ HAULECTRA ── ⟡
 <img width="500" height="200" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
 </div>
 
@@ -139,16 +139,75 @@ Haulectra merupakan perusahaan yang bergerak di bidang *e-commerce* dengan menye
 </details>
 
 ## ↳ Struktur Program/Package
-
+Dalam penyusunan Haul, konsep MVC (Model View Controller) diterapkan untuk mengatur susunan program berdasarkan fungsi masing-masing. Melalui konsep ini, pengelolaan data, penyajian tampilan, dan jalannya proses program ditempatkan pada bagian yang berbeda agar kode lebih tertata dan memudahkan pemeliharaan maupun penambahan fitur.
+```
+HaulApp/
+├── config/
+│   ├── JpaUtil.java
+│   ├── Koneksi.java
+│   ├── Konfigurasi.java
+│   └── TestKoneksi.java
+├── controller/
+│   ├── AuthController.java
+│   ├── PelangganController.java
+│   ├── PesananController.java
+│   ├── ProdukController.java
+│   ├── PromoController.java
+│   └── ValidasiException.java
+├── main/
+│   └── MainApp.java
+├── model/
+│   ├── Pengguna.java
+│   ├── Admin.java
+│   ├── Pelanggan.java
+│   ├── Produk.java
+│   ├── Promo.java
+│   ├── Pesanan.java
+│   ├── DAO.java
+│   ├── PenggunaDAO.java
+│   ├── ProdukDAOJdbc.java
+│   ├── ProdukDAOJpa.java
+│   ├── PromoDAO.java
+│   ├── PesananDAO.java
+│   └── GambarProdukDAO.java
+└── view/
+    ├── LoginView.java
+    ├── AdminView.java
+    ├── PelangganView.java
+    ├── BerandaPanel.java
+    ├── KeranjangPanel.java
+    ├── CheckoutPanel.java
+    ├── RiwayatPanel.java
+    ├── ProfilPanel.java
+    ├── ProdukPanel.java
+    ├── PromoPanel.java
+    ├── PesananAdminPanel.java
+    ├── DataPelangganPanel.java
+    ├── ProdukDialog.java
+    ├── PromoDialog.java
+    ├── DetailProdukDialog.java
+    ├── DetailPesananDialog.java
+    ├── PembayaranDialog.java
+    ├── KonfirmasiDialog.java
+    ├── NotifikasiDialog.java
+    ├── CetakLaporanDialog.java
+    ├── KartuProduk.java
+    ├── KartuPromo.java
+    ├── BarisKeranjang.java
+    ├── KolomAksi.java
+    ├── Gaya.java
+    └── Halaman.java
+```
 
 ## ↳ 4 Pilar OOP
 
 ## ↳ Alur Program
 
-## ↳ Anggota Kelompok 1
+## ↳ Anggota Kelompok 
 
-1. Alif Anugrah Ramadhan [2509116019]
-2. Syavira Firnanda Prawiro [2509116072]
-3. Hanif Amelia Putri [2509116075]
-4. Charist Evlyn Myscha Rerung [2509116102]
+| Alif Anugrah Ramadhan | Syavira Firnanda Prawiro | Hanif Amelia Putri | Charist Evlyn Myscha Rerung |
+|:---:|:---:|:---:|:---:|
+| <img width="180" height="220" alt="WhatsApp Image 2026-11-06 at 12 21 59" src="https://github.com/user-attachments/assets/fd3c33e2-265a-449f-a328-b58057fddde1" />| <img width="180" height="220" alt="Syavira Firnanda Prawiro-poto hbd" src="https://github.com/user-attachments/assets/b9ee00a3-2fea-4937-bf05-0ff72124ac12" />|<img width="180" height="220" alt="IMG_4716" src="https://github.com/user-attachments/assets/4e0f66d5-4703-44b3-a3a7-df70957b5bd3" />|<img width="180" height="220" alt="WhatsApp Image 2026-11-06 at 12 22 45" src="https://github.com/user-attachments/assets/21fc7d0b-e151-4f8b-a99b-dd733430fcb3" />|
+| 2509116019 | 2509116072 | 2509116075 | 2509116102 |
+| Sistem Informasi A'25| Sistem Informasi B'25| Sistem Informasi B'25| Sistem Informasi C'25 |
 
