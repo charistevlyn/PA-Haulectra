@@ -50,7 +50,6 @@ public class DetailProdukDialog extends javax.swing.JDialog {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         pnlLatar = new javax.swing.JPanel();
         lblFoto = new javax.swing.JLabel();
@@ -78,7 +77,6 @@ public class DetailProdukDialog extends javax.swing.JDialog {
 
         pnlLatar.setBackground(new java.awt.Color(255, 255, 255));
         pnlLatar.setBorder(javax.swing.BorderFactory.createEmptyBorder(24, 24, 20, 24));
-        pnlLatar.setLayout(new java.awt.BorderLayout());
 
         lblFoto.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblFoto.setForeground(new java.awt.Color(16, 24, 40));
@@ -86,95 +84,39 @@ public class DetailProdukDialog extends javax.swing.JDialog {
         lblFoto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         lblFoto.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(228, 231, 236)));
         lblFoto.setPreferredSize(new java.awt.Dimension(280, 280));
-        pnlLatar.add(lblFoto, java.awt.BorderLayout.WEST);
 
         pnlInfo.setBackground(new java.awt.Color(255, 255, 255));
         pnlInfo.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 24, 0, 0));
         pnlInfo.setOpaque(false);
-        pnlInfo.setLayout(new java.awt.GridBagLayout());
 
         lblKategori.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblKategori.setForeground(new java.awt.Color(31, 94, 219));
         lblKategori.setText("Kategori");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        pnlInfo.add(lblKategori, gridBagConstraints);
 
         lblNama.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
         lblNama.setForeground(new java.awt.Color(16, 24, 40));
         lblNama.setText("Nama produk");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        pnlInfo.add(lblNama, gridBagConstraints);
 
         lblHarga.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblHarga.setForeground(new java.awt.Color(31, 94, 219));
         lblHarga.setText("Rp0");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
-        pnlInfo.add(lblHarga, gridBagConstraints);
 
         lblStok.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblStok.setForeground(new java.awt.Color(102, 112, 133));
         lblStok.setText("Stok");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        pnlInfo.add(lblStok, gridBagConstraints);
 
         sepInfo.setForeground(new java.awt.Color(228, 231, 236));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(18, 0, 18, 0);
-        pnlInfo.add(sepInfo, gridBagConstraints);
 
         lblDeskripsi.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblDeskripsi.setForeground(new java.awt.Color(102, 112, 133));
         lblDeskripsi.setText("Kode produk");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        pnlInfo.add(lblDeskripsi, gridBagConstraints);
 
         lblJumlahJudul.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblJumlahJudul.setForeground(new java.awt.Color(52, 64, 84));
         lblJumlahJudul.setText("Jumlah");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 6;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(18, 0, 0, 0);
-        pnlInfo.add(lblJumlahJudul, gridBagConstraints);
 
         pnlJumlah.setBackground(new java.awt.Color(255, 255, 255));
         pnlJumlah.setOpaque(false);
-        pnlJumlah.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         btnKurang.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         btnKurang.setForeground(new java.awt.Color(16, 24, 40));
@@ -188,14 +130,12 @@ public class DetailProdukDialog extends javax.swing.JDialog {
                 btnKurangActionPerformed(evt);
             }
         });
-        pnlJumlah.add(btnKurang);
 
         lblJumlah.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblJumlah.setForeground(new java.awt.Color(16, 24, 40));
         lblJumlah.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblJumlah.setPreferredSize(new java.awt.Dimension(56, 38));
         lblJumlah.setText("1");
-        pnlJumlah.add(lblJumlah);
+        lblJumlah.setPreferredSize(new java.awt.Dimension(56, 38));
 
         btnTambah.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         btnTambah.setForeground(new java.awt.Color(16, 24, 40));
@@ -209,43 +149,74 @@ public class DetailProdukDialog extends javax.swing.JDialog {
                 btnTambahActionPerformed(evt);
             }
         });
-        pnlJumlah.add(btnTambah);
 
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 7;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(8, 0, 0, 0);
-        pnlInfo.add(pnlJumlah, gridBagConstraints);
+        javax.swing.GroupLayout pnlJumlahLayout = new javax.swing.GroupLayout(pnlJumlah);
+        pnlJumlah.setLayout(pnlJumlahLayout);
+        pnlJumlahLayout.setHorizontalGroup(
+            pnlJumlahLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlJumlahLayout.createSequentialGroup()
+                .addComponent(btnKurang, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(lblJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(btnTambah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        pnlJumlahLayout.setVerticalGroup(
+            pnlJumlahLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnKurang, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnTambah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         lblDiKeranjang.setForeground(new java.awt.Color(102, 112, 133));
         lblDiKeranjang.setText(" ");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 8;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(8, 0, 0, 0);
-        pnlInfo.add(lblDiKeranjang, gridBagConstraints);
 
         pnlSisa.setBackground(new java.awt.Color(255, 255, 255));
         pnlSisa.setOpaque(false);
-        pnlSisa.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 5));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 9;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weighty = 1.0;
-        pnlInfo.add(pnlSisa, gridBagConstraints);
+        pnlSisa.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        pnlLatar.add(pnlInfo, java.awt.BorderLayout.CENTER);
+        javax.swing.GroupLayout pnlInfoLayout = new javax.swing.GroupLayout(pnlInfo);
+        pnlInfo.setLayout(pnlInfoLayout);
+        pnlInfoLayout.setHorizontalGroup(
+            pnlInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblKategori, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblNama, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblHarga, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblStok, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(sepInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblDeskripsi, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblJumlahJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnlJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblDiKeranjang, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnlSisa, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlInfoLayout.setVerticalGroup(
+            pnlInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlInfoLayout.createSequentialGroup()
+                .addComponent(lblKategori)
+                .addGap(6, 6, 6)
+                .addComponent(lblNama)
+                .addGap(10, 10, 10)
+                .addComponent(lblHarga)
+                .addGap(6, 6, 6)
+                .addComponent(lblStok)
+                .addGap(18, 18, 18)
+                .addComponent(sepInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lblDeskripsi)
+                .addGap(18, 18, 18)
+                .addComponent(lblJumlahJudul)
+                .addGap(8, 8, 8)
+                .addComponent(pnlJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(lblDiKeranjang)
+                .addGap(0, 0, 0)
+                .addComponent(pnlSisa, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         pnlTombol.setBackground(new java.awt.Color(255, 255, 255));
         pnlTombol.setBorder(javax.swing.BorderFactory.createEmptyBorder(24, 0, 0, 0));
         pnlTombol.setOpaque(false);
-        pnlTombol.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 8, 0));
 
         btnTutup.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         btnTutup.setForeground(new java.awt.Color(16, 24, 40));
@@ -259,7 +230,6 @@ public class DetailProdukDialog extends javax.swing.JDialog {
                 btnTutupActionPerformed(evt);
             }
         });
-        pnlTombol.add(btnTutup);
 
         btnMasukkan.setBackground(new java.awt.Color(31, 94, 219));
         btnMasukkan.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
@@ -276,9 +246,41 @@ public class DetailProdukDialog extends javax.swing.JDialog {
                 btnMasukkanActionPerformed(evt);
             }
         });
-        pnlTombol.add(btnMasukkan);
 
-        pnlLatar.add(pnlTombol, java.awt.BorderLayout.SOUTH);
+        javax.swing.GroupLayout pnlTombolLayout = new javax.swing.GroupLayout(pnlTombol);
+        pnlTombol.setLayout(pnlTombolLayout);
+        pnlTombolLayout.setHorizontalGroup(
+            pnlTombolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlTombolLayout.createSequentialGroup()
+                .addGap(365, 365, 365)
+                .addComponent(btnTutup, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(btnMasukkan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        pnlTombolLayout.setVerticalGroup(
+            pnlTombolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnTutup, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnMasukkan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        javax.swing.GroupLayout pnlLatarLayout = new javax.swing.GroupLayout(pnlLatar);
+        pnlLatar.setLayout(pnlLatarLayout);
+        pnlLatarLayout.setHorizontalGroup(
+            pnlLatarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlLatarLayout.createSequentialGroup()
+                .addComponent(lblFoto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(pnlInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(pnlTombol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlLatarLayout.setVerticalGroup(
+            pnlLatarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlLatarLayout.createSequentialGroup()
+                .addGroup(pnlLatarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(pnlTombol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         getContentPane().add(pnlLatar, java.awt.BorderLayout.CENTER);
 

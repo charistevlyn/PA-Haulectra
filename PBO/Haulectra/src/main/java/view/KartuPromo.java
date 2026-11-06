@@ -25,7 +25,6 @@ public class KartuPromo extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         lblPotongan = new javax.swing.JLabel();
         lblJenis = new javax.swing.JLabel();
@@ -36,52 +35,22 @@ public class KartuPromo extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
         setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(199, 215, 254)), javax.swing.BorderFactory.createEmptyBorder(12, 14, 12, 14)));
-        setLayout(new java.awt.GridBagLayout());
 
         lblPotongan.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
         lblPotongan.setForeground(new java.awt.Color(31, 94, 219));
         lblPotongan.setText("Potongan");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        add(lblPotongan, gridBagConstraints);
 
         lblJenis.setBackground(new java.awt.Color(232, 240, 255));
-        lblJenis.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 8, 3, 8));
         lblJenis.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         lblJenis.setForeground(new java.awt.Color(31, 94, 219));
-        lblJenis.setOpaque(true);
         lblJenis.setText("Diskon");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHEAST;
-        add(lblJenis, gridBagConstraints);
+        lblJenis.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 8, 3, 8));
+        lblJenis.setOpaque(true);
 
         lblSyarat.setForeground(new java.awt.Color(102, 112, 133));
         lblSyarat.setText("Syarat");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(2, 0, 0, 0);
-        add(lblSyarat, gridBagConstraints);
 
         sepPromo.setForeground(new java.awt.Color(228, 231, 236));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(10, 0, 10, 0);
-        add(sepPromo, gridBagConstraints);
 
         lblKode.setBackground(new java.awt.Color(232, 240, 255));
         lblKode.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(164, 188, 253)), javax.swing.BorderFactory.createEmptyBorder(3, 10, 3, 10)));
@@ -89,20 +58,43 @@ public class KartuPromo extends javax.swing.JPanel {
         lblKode.setForeground(new java.awt.Color(31, 94, 219));
         lblKode.setOpaque(true);
         lblKode.setText("KODE");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        add(lblKode, gridBagConstraints);
 
         lblBerlaku.setForeground(new java.awt.Color(102, 112, 133));
         lblBerlaku.setText("s.d. tanggal");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 8, 0, 0);
-        add(lblBerlaku, gridBagConstraints);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lblPotongan, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17)
+                .addComponent(lblJenis))
+            .addComponent(lblSyarat, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(sepPromo, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lblKode)
+                .addGap(166, 166, 166)
+                .addComponent(lblBerlaku))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(7, 7, 7)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblPotongan)
+                    .addComponent(lblJenis))
+                .addGap(2, 2, 2)
+                .addComponent(lblSyarat)
+                .addGap(10, 10, 10)
+                .addComponent(sepPromo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblKode)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(5, 5, 5)
+                        .addComponent(lblBerlaku))))
+        );
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

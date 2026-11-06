@@ -136,7 +136,6 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
 
         setBackground(new java.awt.Color(245, 247, 251));
         setBorder(javax.swing.BorderFactory.createEmptyBorder(24, 32, 24, 32));
-        setLayout(new java.awt.BorderLayout());
 
         pnlKepala.setBackground(new java.awt.Color(255, 255, 255));
         pnlKepala.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 20, 0));
@@ -164,8 +163,6 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
         gridBagConstraints.insets = new java.awt.Insets(4, 0, 0, 0);
         pnlKepala.add(lblSub, gridBagConstraints);
 
-        add(pnlKepala, java.awt.BorderLayout.NORTH);
-
         scrKiri.setBorder(null);
         scrKiri.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
@@ -175,52 +172,44 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
 
         pnlAlamat.setBackground(new java.awt.Color(255, 255, 255));
         pnlAlamat.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(228, 231, 236)), javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20)));
-        pnlAlamat.setLayout(new java.awt.GridBagLayout());
 
         lblAlamatJudul.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblAlamatJudul.setForeground(new java.awt.Color(16, 24, 40));
         lblAlamatJudul.setText("Alamat pengiriman");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        pnlAlamat.add(lblAlamatJudul, gridBagConstraints);
 
         lblPenerima.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblPenerima.setForeground(new java.awt.Color(16, 24, 40));
         lblPenerima.setText("Nama, Telepon");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        pnlAlamat.add(lblPenerima, gridBagConstraints);
 
         lblAlamat.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblAlamat.setForeground(new java.awt.Color(102, 112, 133));
         lblAlamat.setText("Alamat");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(4, 0, 0, 0);
-        pnlAlamat.add(lblAlamat, gridBagConstraints);
 
         lblUbahAlamat.setForeground(new java.awt.Color(102, 112, 133));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(8, 0, 0, 0);
-        pnlAlamat.add(lblUbahAlamat, gridBagConstraints);
+
+        javax.swing.GroupLayout pnlAlamatLayout = new javax.swing.GroupLayout(pnlAlamat);
+        pnlAlamat.setLayout(pnlAlamatLayout);
+        pnlAlamatLayout.setHorizontalGroup(
+            pnlAlamatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblUbahAlamat)
+            .addGroup(pnlAlamatLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(pnlAlamatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblAlamatJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPenerima, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblAlamat, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+        pnlAlamatLayout.setVerticalGroup(
+            pnlAlamatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAlamatLayout.createSequentialGroup()
+                .addComponent(lblUbahAlamat)
+                .addGap(21, 21, 21)
+                .addComponent(lblAlamatJudul)
+                .addGap(10, 10, 10)
+                .addComponent(lblPenerima)
+                .addGap(4, 4, 4)
+                .addComponent(lblAlamat))
+        );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -233,27 +222,16 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
 
         pnlBarang.setBackground(new java.awt.Color(255, 255, 255));
         pnlBarang.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(228, 231, 236)), javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20)));
-        pnlBarang.setLayout(new java.awt.GridBagLayout());
 
         lblBarangJudul.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblBarangJudul.setForeground(new java.awt.Color(16, 24, 40));
         lblBarangJudul.setText("Barang dipesan");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        pnlBarang.add(lblBarangJudul, gridBagConstraints);
 
         scrBarang.setBackground(new java.awt.Color(255, 255, 255));
         scrBarang.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(228, 231, 236)));
         scrBarang.setPreferredSize(new java.awt.Dimension(600, 170));
 
         tblBarang.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        tblBarang.setGridColor(new java.awt.Color(228, 231, 236));
-        tblBarang.setIntercellSpacing(new java.awt.Dimension(0, 1));
         tblBarang.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -270,18 +248,27 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
                 return canEdit [columnIndex];
             }
         });
+        tblBarang.setGridColor(new java.awt.Color(228, 231, 236));
+        tblBarang.setIntercellSpacing(new java.awt.Dimension(0, 1));
         tblBarang.setRowHeight(40);
         tblBarang.setSelectionBackground(new java.awt.Color(232, 240, 255));
         tblBarang.setSelectionForeground(new java.awt.Color(16, 24, 40));
         scrBarang.setViewportView(tblBarang);
 
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        pnlBarang.add(scrBarang, gridBagConstraints);
+        javax.swing.GroupLayout pnlBarangLayout = new javax.swing.GroupLayout(pnlBarang);
+        pnlBarang.setLayout(pnlBarangLayout);
+        pnlBarangLayout.setHorizontalGroup(
+            pnlBarangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblBarangJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(scrBarang, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlBarangLayout.setVerticalGroup(
+            pnlBarangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBarangLayout.createSequentialGroup()
+                .addComponent(lblBarangJudul)
+                .addGap(10, 10, 10)
+                .addComponent(scrBarang, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -294,20 +281,10 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
 
         pnlMetode.setBackground(new java.awt.Color(255, 255, 255));
         pnlMetode.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(228, 231, 236)), javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20)));
-        pnlMetode.setLayout(new java.awt.GridBagLayout());
 
         lblMetodeJudul.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblMetodeJudul.setForeground(new java.awt.Color(16, 24, 40));
         lblMetodeJudul.setText("Metode pembayaran");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 8, 0);
-        pnlMetode.add(lblMetodeJudul, gridBagConstraints);
 
         rbTransfer.setBackground(new java.awt.Color(255, 255, 255));
         grpMetode.add(rbTransfer);
@@ -316,12 +293,6 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
         rbTransfer.setText("Transfer");
         rbTransfer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         rbTransfer.setFocusPainted(false);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 24);
-        pnlMetode.add(rbTransfer, gridBagConstraints);
 
         rbEwallet.setBackground(new java.awt.Color(255, 255, 255));
         grpMetode.add(rbEwallet);
@@ -330,34 +301,42 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
         rbEwallet.setText("E-Wallet");
         rbEwallet.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         rbEwallet.setFocusPainted(false);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        pnlMetode.add(rbEwallet, gridBagConstraints);
 
         pnlMetodeSisa.setBackground(new java.awt.Color(255, 255, 255));
         pnlMetodeSisa.setOpaque(false);
-        pnlMetodeSisa.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 5));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        pnlMetode.add(pnlMetodeSisa, gridBagConstraints);
+        pnlMetodeSisa.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         lblErrMetode.setForeground(new java.awt.Color(217, 45, 32));
-        lblErrMetode.setPreferredSize(new java.awt.Dimension(40, 17));
         lblErrMetode.setText(" ");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(4, 0, 0, 0);
-        pnlMetode.add(lblErrMetode, gridBagConstraints);
+        lblErrMetode.setPreferredSize(new java.awt.Dimension(40, 17));
+
+        javax.swing.GroupLayout pnlMetodeLayout = new javax.swing.GroupLayout(pnlMetode);
+        pnlMetode.setLayout(pnlMetodeLayout);
+        pnlMetodeLayout.setHorizontalGroup(
+            pnlMetodeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblMetodeJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(pnlMetodeLayout.createSequentialGroup()
+                .addComponent(rbTransfer)
+                .addGap(24, 24, 24)
+                .addComponent(rbEwallet)
+                .addGap(0, 0, 0)
+                .addComponent(pnlMetodeSisa, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(lblErrMetode, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlMetodeLayout.setVerticalGroup(
+            pnlMetodeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlMetodeLayout.createSequentialGroup()
+                .addComponent(lblMetodeJudul)
+                .addGap(8, 8, 8)
+                .addGroup(pnlMetodeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(rbTransfer)
+                    .addComponent(rbEwallet)
+                    .addGroup(pnlMetodeLayout.createSequentialGroup()
+                        .addGap(0, 0, 0)
+                        .addComponent(pnlMetodeSisa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(4, 4, 4)
+                .addComponent(lblErrMetode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -370,19 +349,10 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
 
         pnlVoucher.setBackground(new java.awt.Color(255, 255, 255));
         pnlVoucher.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(228, 231, 236)), javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20)));
-        pnlVoucher.setLayout(new java.awt.GridBagLayout());
 
         lblVoucherJudul.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblVoucherJudul.setForeground(new java.awt.Color(16, 24, 40));
         lblVoucherJudul.setText("Voucher");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 8, 0);
-        pnlVoucher.add(lblVoucherJudul, gridBagConstraints);
 
         cmbVoucher.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         cmbVoucher.setForeground(new java.awt.Color(16, 24, 40));
@@ -393,22 +363,27 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
                 cmbVoucherActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        pnlVoucher.add(cmbVoucher, gridBagConstraints);
 
         lblVoucherInfo.setForeground(new java.awt.Color(102, 112, 133));
         lblVoucherInfo.setText(" ");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        pnlVoucher.add(lblVoucherInfo, gridBagConstraints);
+
+        javax.swing.GroupLayout pnlVoucherLayout = new javax.swing.GroupLayout(pnlVoucher);
+        pnlVoucher.setLayout(pnlVoucherLayout);
+        pnlVoucherLayout.setHorizontalGroup(
+            pnlVoucherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblVoucherJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(cmbVoucher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblVoucherInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlVoucherLayout.setVerticalGroup(
+            pnlVoucherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlVoucherLayout.createSequentialGroup()
+                .addComponent(lblVoucherJudul)
+                .addGap(8, 8, 8)
+                .addComponent(cmbVoucher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(lblVoucherInfo))
+        );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -420,7 +395,18 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
 
         pnlKiriSisa.setBackground(new java.awt.Color(255, 255, 255));
         pnlKiriSisa.setOpaque(false);
-        pnlKiriSisa.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 5));
+
+        javax.swing.GroupLayout pnlKiriSisaLayout = new javax.swing.GroupLayout(pnlKiriSisa);
+        pnlKiriSisa.setLayout(pnlKiriSisaLayout);
+        pnlKiriSisaLayout.setHorizontalGroup(
+            pnlKiriSisaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 673, Short.MAX_VALUE)
+        );
+        pnlKiriSisaLayout.setVerticalGroup(
+            pnlKiriSisaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 42, Short.MAX_VALUE)
+        );
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
@@ -431,126 +417,50 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
 
         scrKiri.setViewportView(pnlKiri);
 
-        add(scrKiri, java.awt.BorderLayout.CENTER);
-
         pnlKanan.setBackground(new java.awt.Color(255, 255, 255));
         pnlKanan.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 20, 0, 0));
         pnlKanan.setOpaque(false);
-        pnlKanan.setLayout(new java.awt.BorderLayout());
 
         pnlRingkasan.setBackground(new java.awt.Color(255, 255, 255));
         pnlRingkasan.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(228, 231, 236)), javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20)));
-        pnlRingkasan.setLayout(new java.awt.GridBagLayout());
 
         lblRingkasan.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         lblRingkasan.setForeground(new java.awt.Color(16, 24, 40));
         lblRingkasan.setText("Ringkasan belanja");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 4, 0);
-        pnlRingkasan.add(lblRingkasan, gridBagConstraints);
 
         lblSubtotalTeks.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblSubtotalTeks.setForeground(new java.awt.Color(102, 112, 133));
         lblSubtotalTeks.setText("Subtotal");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
-        pnlRingkasan.add(lblSubtotalTeks, gridBagConstraints);
 
         lblSubtotal.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         lblSubtotal.setForeground(new java.awt.Color(16, 24, 40));
         lblSubtotal.setText("Rp0");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
-        pnlRingkasan.add(lblSubtotal, gridBagConstraints);
 
         lblOngkirTeks.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblOngkirTeks.setForeground(new java.awt.Color(102, 112, 133));
         lblOngkirTeks.setText("Ongkos kirim");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
-        pnlRingkasan.add(lblOngkirTeks, gridBagConstraints);
 
         lblOngkir.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         lblOngkir.setForeground(new java.awt.Color(16, 24, 40));
         lblOngkir.setText("Rp0");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
-        pnlRingkasan.add(lblOngkir, gridBagConstraints);
 
         lblPotonganTeks.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblPotonganTeks.setForeground(new java.awt.Color(102, 112, 133));
         lblPotonganTeks.setText("Potongan voucher");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
-        pnlRingkasan.add(lblPotonganTeks, gridBagConstraints);
 
         lblPotongan.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         lblPotongan.setForeground(new java.awt.Color(18, 128, 92));
         lblPotongan.setText("-Rp0");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
-        pnlRingkasan.add(lblPotongan, gridBagConstraints);
 
         sepTotal.setForeground(new java.awt.Color(228, 231, 236));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(14, 0, 4, 0);
-        pnlRingkasan.add(sepTotal, gridBagConstraints);
 
         lblTotalTeks.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblTotalTeks.setForeground(new java.awt.Color(102, 112, 133));
         lblTotalTeks.setText("Total pembayaran");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
-        pnlRingkasan.add(lblTotalTeks, gridBagConstraints);
 
         lblTotal.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblTotal.setForeground(new java.awt.Color(31, 94, 219));
         lblTotal.setText("Rp0");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
-        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
-        pnlRingkasan.add(lblTotal, gridBagConstraints);
 
         btnBuatPesanan.setBackground(new java.awt.Color(31, 94, 219));
         btnBuatPesanan.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
@@ -565,15 +475,6 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
                 btnBuatPesananActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 6;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 0);
-        pnlRingkasan.add(btnBuatPesanan, gridBagConstraints);
 
         btnKembali.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         btnKembali.setForeground(new java.awt.Color(16, 24, 40));
@@ -587,19 +488,91 @@ public class CheckoutPanel extends javax.swing.JPanel implements Halaman {
                 btnKembaliActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 7;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(8, 0, 0, 0);
-        pnlRingkasan.add(btnKembali, gridBagConstraints);
 
-        pnlKanan.add(pnlRingkasan, java.awt.BorderLayout.NORTH);
+        javax.swing.GroupLayout pnlRingkasanLayout = new javax.swing.GroupLayout(pnlRingkasan);
+        pnlRingkasan.setLayout(pnlRingkasanLayout);
+        pnlRingkasanLayout.setHorizontalGroup(
+            pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblRingkasan, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(pnlRingkasanLayout.createSequentialGroup()
+                .addComponent(lblSubtotalTeks, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addComponent(lblSubtotal))
+            .addGroup(pnlRingkasanLayout.createSequentialGroup()
+                .addComponent(lblOngkirTeks, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addComponent(lblOngkir))
+            .addGroup(pnlRingkasanLayout.createSequentialGroup()
+                .addComponent(lblPotonganTeks, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(lblPotongan))
+            .addComponent(sepTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(pnlRingkasanLayout.createSequentialGroup()
+                .addComponent(lblTotalTeks, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(lblTotal))
+            .addComponent(btnBuatPesanan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnKembali, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlRingkasanLayout.setVerticalGroup(
+            pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlRingkasanLayout.createSequentialGroup()
+                .addComponent(lblRingkasan)
+                .addGap(14, 14, 14)
+                .addGroup(pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblSubtotalTeks)
+                    .addComponent(lblSubtotal))
+                .addGap(10, 10, 10)
+                .addGroup(pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblOngkirTeks)
+                    .addComponent(lblOngkir))
+                .addGap(10, 10, 10)
+                .addGroup(pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblPotonganTeks)
+                    .addComponent(lblPotongan))
+                .addGap(14, 14, 14)
+                .addComponent(sepTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14)
+                .addGroup(pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlRingkasanLayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(lblTotalTeks))
+                    .addComponent(lblTotal))
+                .addGap(20, 20, 20)
+                .addComponent(btnBuatPesanan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(btnKembali, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
-        add(pnlKanan, java.awt.BorderLayout.EAST);
+        javax.swing.GroupLayout pnlKananLayout = new javax.swing.GroupLayout(pnlKanan);
+        pnlKanan.setLayout(pnlKananLayout);
+        pnlKananLayout.setHorizontalGroup(
+            pnlKananLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlRingkasan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlKananLayout.setVerticalGroup(
+            pnlKananLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlRingkasan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlKepala, javax.swing.GroupLayout.PREFERRED_SIZE, 1004, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(scrKiri, javax.swing.GroupLayout.PREFERRED_SIZE, 652, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(pnlKanan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(pnlKepala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(scrKiri, javax.swing.GroupLayout.PREFERRED_SIZE, 715, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlKanan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
     }// </editor-fold>//GEN-END:initComponents
 
     private void cmbVoucherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbVoucherActionPerformed

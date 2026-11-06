@@ -46,7 +46,6 @@ public class AdminView extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         pnlSamping = new javax.swing.JPanel();
         lblLogo = new javax.swing.JLabel();
@@ -71,30 +70,15 @@ public class AdminView extends javax.swing.JFrame {
         pnlSamping.setBackground(new java.awt.Color(255, 255, 255));
         pnlSamping.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 1, new java.awt.Color(228, 231, 236)), javax.swing.BorderFactory.createEmptyBorder(20, 16, 20, 16)));
         pnlSamping.setPreferredSize(new java.awt.Dimension(248, 600));
-        pnlSamping.setLayout(new java.awt.GridBagLayout());
 
         lblLogo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblLogo.setForeground(new java.awt.Color(16, 24, 40));
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/ikon/logo.png"))); // NOI18N
         lblLogo.setIconTextGap(10);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 28, 0);
-        pnlSamping.add(lblLogo, gridBagConstraints);
 
         lblMenu.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         lblMenu.setForeground(new java.awt.Color(102, 112, 133));
         lblMenu.setText("MENU ADMIN");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 12, 8, 0);
-        pnlSamping.add(lblMenu, gridBagConstraints);
 
         btnProduk.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnProduk.setForeground(new java.awt.Color(52, 64, 84));
@@ -111,14 +95,6 @@ public class AdminView extends javax.swing.JFrame {
                 btnProdukActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 4, 0);
-        pnlSamping.add(btnProduk, gridBagConstraints);
 
         btnPromo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnPromo.setForeground(new java.awt.Color(52, 64, 84));
@@ -135,14 +111,6 @@ public class AdminView extends javax.swing.JFrame {
                 btnPromoActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 4, 0);
-        pnlSamping.add(btnPromo, gridBagConstraints);
 
         btnPesanan.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnPesanan.setForeground(new java.awt.Color(52, 64, 84));
@@ -159,14 +127,6 @@ public class AdminView extends javax.swing.JFrame {
                 btnPesananActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 4, 0);
-        pnlSamping.add(btnPesanan, gridBagConstraints);
 
         btnPelanggan.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnPelanggan.setForeground(new java.awt.Color(52, 64, 84));
@@ -183,34 +143,22 @@ public class AdminView extends javax.swing.JFrame {
                 btnPelangganActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 4, 0);
-        pnlSamping.add(btnPelanggan, gridBagConstraints);
 
         pnlSisa.setBackground(new java.awt.Color(255, 255, 255));
         pnlSisa.setOpaque(false);
-        pnlSisa.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 5));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 6;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weighty = 1.0;
-        pnlSamping.add(pnlSisa, gridBagConstraints);
+
+        javax.swing.GroupLayout pnlSisaLayout = new javax.swing.GroupLayout(pnlSisa);
+        pnlSisa.setLayout(pnlSisaLayout);
+        pnlSisaLayout.setHorizontalGroup(
+            pnlSisaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 215, Short.MAX_VALUE)
+        );
+        pnlSisaLayout.setVerticalGroup(
+            pnlSisaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 200, Short.MAX_VALUE)
+        );
 
         sepLogout.setForeground(new java.awt.Color(228, 231, 236));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 7;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 16, 0);
-        pnlSamping.add(sepLogout, gridBagConstraints);
 
         btnLogout.setBackground(new java.awt.Color(217, 45, 32));
         btnLogout.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
@@ -227,13 +175,44 @@ public class AdminView extends javax.swing.JFrame {
                 btnLogoutActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 8;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        pnlSamping.add(btnLogout, gridBagConstraints);
+
+        javax.swing.GroupLayout pnlSampingLayout = new javax.swing.GroupLayout(pnlSamping);
+        pnlSamping.setLayout(pnlSampingLayout);
+        pnlSampingLayout.setHorizontalGroup(
+            pnlSampingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(pnlSampingLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(btnProduk, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnPromo, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnPesanan, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnPelanggan, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnlSisa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(sepLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlSampingLayout.setVerticalGroup(
+            pnlSampingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlSampingLayout.createSequentialGroup()
+                .addComponent(lblLogo)
+                .addGap(28, 28, 28)
+                .addComponent(lblMenu)
+                .addGap(8, 8, 8)
+                .addComponent(btnProduk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(btnPromo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(btnPesanan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(btnPelanggan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(pnlSisa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(sepLogout, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addComponent(btnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         getContentPane().add(pnlSamping, java.awt.BorderLayout.WEST);
 
@@ -244,22 +223,45 @@ public class AdminView extends javax.swing.JFrame {
         pnlAtas.setBackground(new java.awt.Color(255, 255, 255));
         pnlAtas.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(228, 231, 236)), javax.swing.BorderFactory.createEmptyBorder(0, 32, 0, 32)));
         pnlAtas.setPreferredSize(new java.awt.Dimension(900, 56));
-        pnlAtas.setLayout(new java.awt.BorderLayout());
 
         lblLokasi.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblLokasi.setForeground(new java.awt.Color(102, 112, 133));
-        pnlAtas.add(lblLokasi, java.awt.BorderLayout.WEST);
 
         lblNamaAdmin.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         lblNamaAdmin.setForeground(new java.awt.Color(52, 64, 84));
         lblNamaAdmin.setText("Nama Admin");
-        pnlAtas.add(lblNamaAdmin, java.awt.BorderLayout.EAST);
+
+        javax.swing.GroupLayout pnlAtasLayout = new javax.swing.GroupLayout(pnlAtas);
+        pnlAtas.setLayout(pnlAtasLayout);
+        pnlAtasLayout.setHorizontalGroup(
+            pnlAtasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAtasLayout.createSequentialGroup()
+                .addComponent(lblLokasi)
+                .addGap(568, 568, 568)
+                .addComponent(lblNamaAdmin))
+        );
+        pnlAtasLayout.setVerticalGroup(
+            pnlAtasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblLokasi, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblNamaAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pnlUtama.add(pnlAtas, java.awt.BorderLayout.NORTH);
 
         pnlHalaman.setBackground(new java.awt.Color(245, 247, 251));
         pnlHalaman.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-        pnlHalaman.setLayout(new java.awt.CardLayout());
+
+        javax.swing.GroupLayout pnlHalamanLayout = new javax.swing.GroupLayout(pnlHalaman);
+        pnlHalaman.setLayout(pnlHalamanLayout);
+        pnlHalamanLayout.setHorizontalGroup(
+            pnlHalamanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 713, Short.MAX_VALUE)
+        );
+        pnlHalamanLayout.setVerticalGroup(
+            pnlHalamanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 520, Short.MAX_VALUE)
+        );
+
         pnlUtama.add(pnlHalaman, java.awt.BorderLayout.CENTER);
 
         getContentPane().add(pnlUtama, java.awt.BorderLayout.CENTER);

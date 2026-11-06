@@ -71,7 +71,6 @@ public class KonfirmasiDialog extends javax.swing.JDialog {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         pnlLatar = new javax.swing.JPanel();
         pnlIsi = new javax.swing.JPanel();
@@ -88,54 +87,46 @@ public class KonfirmasiDialog extends javax.swing.JDialog {
 
         pnlLatar.setBackground(new java.awt.Color(255, 255, 255));
         pnlLatar.setBorder(javax.swing.BorderFactory.createEmptyBorder(24, 24, 20, 24));
-        pnlLatar.setLayout(new java.awt.BorderLayout());
 
         pnlIsi.setBackground(new java.awt.Color(255, 255, 255));
         pnlIsi.setOpaque(false);
-        pnlIsi.setLayout(new java.awt.GridBagLayout());
 
         lblIkon.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblIkon.setForeground(new java.awt.Color(16, 24, 40));
         lblIkon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/ikon/dialog_tanya.png"))); // NOI18N
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 16);
-        pnlIsi.add(lblIkon, gridBagConstraints);
 
         lblJudul.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
         lblJudul.setForeground(new java.awt.Color(16, 24, 40));
         lblJudul.setText("Judul");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(2, 0, 0, 0);
-        pnlIsi.add(lblJudul, gridBagConstraints);
 
         lblPesan.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblPesan.setForeground(new java.awt.Color(102, 112, 133));
         lblPesan.setText("Pesan");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.weighty = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(6, 0, 0, 0);
-        pnlIsi.add(lblPesan, gridBagConstraints);
 
-        pnlLatar.add(pnlIsi, java.awt.BorderLayout.CENTER);
+        javax.swing.GroupLayout pnlIsiLayout = new javax.swing.GroupLayout(pnlIsi);
+        pnlIsi.setLayout(pnlIsiLayout);
+        pnlIsiLayout.setHorizontalGroup(
+            pnlIsiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlIsiLayout.createSequentialGroup()
+                .addComponent(lblIkon)
+                .addGap(16, 16, 16)
+                .addGroup(pnlIsiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPesan, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+        pnlIsiLayout.setVerticalGroup(
+            pnlIsiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblIkon)
+            .addGroup(pnlIsiLayout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addComponent(lblJudul)
+                .addGap(6, 6, 6)
+                .addComponent(lblPesan))
+        );
 
         pnlTombol.setBackground(new java.awt.Color(255, 255, 255));
         pnlTombol.setBorder(javax.swing.BorderFactory.createEmptyBorder(24, 0, 0, 0));
         pnlTombol.setOpaque(false);
-        pnlTombol.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 8, 0));
 
         btnBatal.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         btnBatal.setForeground(new java.awt.Color(16, 24, 40));
@@ -149,7 +140,6 @@ public class KonfirmasiDialog extends javax.swing.JDialog {
                 btnBatalActionPerformed(evt);
             }
         });
-        pnlTombol.add(btnBatal);
 
         btnYa.setBackground(new java.awt.Color(31, 94, 219));
         btnYa.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
@@ -164,9 +154,37 @@ public class KonfirmasiDialog extends javax.swing.JDialog {
                 btnYaActionPerformed(evt);
             }
         });
-        pnlTombol.add(btnYa);
 
-        pnlLatar.add(pnlTombol, java.awt.BorderLayout.SOUTH);
+        javax.swing.GroupLayout pnlTombolLayout = new javax.swing.GroupLayout(pnlTombol);
+        pnlTombol.setLayout(pnlTombolLayout);
+        pnlTombolLayout.setHorizontalGroup(
+            pnlTombolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlTombolLayout.createSequentialGroup()
+                .addGap(138, 138, 138)
+                .addComponent(btnBatal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(btnYa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        pnlTombolLayout.setVerticalGroup(
+            pnlTombolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnBatal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnYa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        javax.swing.GroupLayout pnlLatarLayout = new javax.swing.GroupLayout(pnlLatar);
+        pnlLatar.setLayout(pnlLatarLayout);
+        pnlLatarLayout.setHorizontalGroup(
+            pnlLatarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlIsi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnlTombol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlLatarLayout.setVerticalGroup(
+            pnlLatarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlLatarLayout.createSequentialGroup()
+                .addComponent(pnlIsi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(pnlTombol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         getContentPane().add(pnlLatar, java.awt.BorderLayout.CENTER);
 

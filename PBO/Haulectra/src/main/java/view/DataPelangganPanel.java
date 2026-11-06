@@ -54,33 +54,17 @@ public class DataPelangganPanel extends javax.swing.JPanel implements Halaman {
 
         setBackground(new java.awt.Color(245, 247, 251));
         setBorder(javax.swing.BorderFactory.createEmptyBorder(24, 32, 24, 32));
-        setLayout(new java.awt.BorderLayout());
 
         pnlKepala.setBackground(new java.awt.Color(255, 255, 255));
         pnlKepala.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 16, 0));
         pnlKepala.setOpaque(false);
-        pnlKepala.setLayout(new java.awt.GridBagLayout());
 
         lblJudul.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
         lblJudul.setForeground(new java.awt.Color(16, 24, 40));
         lblJudul.setText("Data Pelanggan");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        pnlKepala.add(lblJudul, gridBagConstraints);
 
         lblSub.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblSub.setForeground(new java.awt.Color(102, 112, 133));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.insets = new java.awt.Insets(4, 0, 0, 0);
-        pnlKepala.add(lblSub, gridBagConstraints);
 
         pnlFilter.setBackground(new java.awt.Color(255, 255, 255));
         pnlFilter.setOpaque(false);
@@ -96,9 +80,9 @@ public class DataPelangganPanel extends javax.swing.JPanel implements Halaman {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         pnlFilter.add(lblCari, gridBagConstraints);
 
-        txtCari.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
         txtCari.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         txtCari.setForeground(new java.awt.Color(16, 24, 40));
+        txtCari.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
         txtCari.setPreferredSize(new java.awt.Dimension(300, 38));
         txtCari.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,24 +119,28 @@ public class DataPelangganPanel extends javax.swing.JPanel implements Halaman {
         gridBagConstraints.insets = new java.awt.Insets(6, 8, 0, 0);
         pnlFilter.add(btnCari, gridBagConstraints);
 
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 0);
-        pnlKepala.add(pnlFilter, gridBagConstraints);
-
-        add(pnlKepala, java.awt.BorderLayout.NORTH);
+        javax.swing.GroupLayout pnlKepalaLayout = new javax.swing.GroupLayout(pnlKepala);
+        pnlKepala.setLayout(pnlKepalaLayout);
+        pnlKepalaLayout.setHorizontalGroup(
+            pnlKepalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 836, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblSub)
+            .addComponent(pnlFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 836, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlKepalaLayout.setVerticalGroup(
+            pnlKepalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlKepalaLayout.createSequentialGroup()
+                .addGroup(pnlKepalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblJudul)
+                    .addComponent(lblSub))
+                .addGap(24, 24, 24)
+                .addComponent(pnlFilter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         scrPelanggan.setBackground(new java.awt.Color(255, 255, 255));
         scrPelanggan.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(228, 231, 236)));
 
         tblPelanggan.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        tblPelanggan.setGridColor(new java.awt.Color(228, 231, 236));
-        tblPelanggan.setIntercellSpacing(new java.awt.Dimension(0, 1));
         tblPelanggan.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -169,18 +157,35 @@ public class DataPelangganPanel extends javax.swing.JPanel implements Halaman {
                 return canEdit [columnIndex];
             }
         });
+        tblPelanggan.setGridColor(new java.awt.Color(228, 231, 236));
+        tblPelanggan.setIntercellSpacing(new java.awt.Dimension(0, 1));
         tblPelanggan.setRowHeight(44);
         tblPelanggan.setSelectionBackground(new java.awt.Color(232, 240, 255));
         tblPelanggan.setSelectionForeground(new java.awt.Color(16, 24, 40));
         scrPelanggan.setViewportView(tblPelanggan);
 
-        add(scrPelanggan, java.awt.BorderLayout.CENTER);
-
-        lblJumlah.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 0, 0, 0));
         lblJumlah.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblJumlah.setForeground(new java.awt.Color(102, 112, 133));
         lblJumlah.setText("0 data");
-        add(lblJumlah, java.awt.BorderLayout.SOUTH);
+        lblJumlah.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 0, 0, 0));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlKepala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(scrPelanggan, javax.swing.GroupLayout.PREFERRED_SIZE, 836, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, 836, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(pnlKepala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(scrPelanggan, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(lblJumlah))
+        );
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCariActionPerformed
