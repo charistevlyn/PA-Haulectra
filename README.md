@@ -207,7 +207,7 @@ HaulApp/
 
 | Alif Anugrah Ramadhan | Syavira Firnanda Prawiro | Hanif Amelia Putri | Charist Evlyn Myscha Rerung |
 |:---:|:---:|:---:|:---:|
-| <img width="180" height="220" alt="WhatsApp Image 2026-11-06 at 12 21 59" src="https://github.com/user-attachments/assets/fd3c33e2-265a-449f-a328-b58057fddde1" />| <img width="180" height="220" alt="Syavira Firnanda Prawiro-poto hbd" src="https://github.com/user-attachments/assets/b9ee00a3-2fea-4937-bf05-0ff72124ac12" />|<img width="180" height="220" alt="IMG_4716" src="https://github.com/user-attachments/assets/4e0f66d5-4703-44b3-a3a7-df70957b5bd3" />|<img width="180" height="220" alt="WhatsApp Image 2026-11-06 at 12 22 45" src="https://github.com/user-attachments/assets/21fc7d0b-e151-4f8b-a99b-dd733430fcb3" />|
+|<img width="180" height="220" alt="WhatsApp Image 2026-11-06 at 12 42 32" src="https://github.com/user-attachments/assets/7de9643c-2b9e-44b1-903c-8032a8dbe221" />|<img width="180" height="220" alt="Syavira Firnanda Prawiro-poto hbd" src="https://github.com/user-attachments/assets/b9ee00a3-2fea-4937-bf05-0ff72124ac12" />|<img width="180" height="220" alt="IMG_4716" src="https://github.com/user-attachments/assets/4e0f66d5-4703-44b3-a3a7-df70957b5bd3" />|<img width="180" height="220" alt="WhatsApp Image 2026-11-06 at 12 22 45" src="https://github.com/user-attachments/assets/21fc7d0b-e151-4f8b-a99b-dd733430fcb3" />|
 | 2509116019 | 2509116072 | 2509116075 | 2509116102 |
 | Sistem Informasi A'25| Sistem Informasi B'25| Sistem Informasi B'25| Sistem Informasi C'25 |
 
