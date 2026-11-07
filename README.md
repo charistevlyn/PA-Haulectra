@@ -2,7 +2,11 @@
 <img width="800" height="200" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
 </div>
 
-<p align="center"><em>Sistem Penjualan Online dengan pengelolaan Produk, Stok dan Promo</em></p>
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=30&duration=3000&pause=1000&color=4F8CFF&center=true&vCenter=true&random=false&width=1200&height=100&lines=Sistem+Penjualan+Online+dengan+Pengelolaan+Produk%2C+Stok+dan+Promo.;Platform+E-Commerce+Haul;Kelompok+19+Orang-Orang+Keren"/>
+
+</div>
 
 ---
 
@@ -245,9 +249,11 @@ HaulApp/
 ## ↳ 4 Pilar OOP
 
 ### Encspsulation
+<p align="justify">
 Pada program Haul, class Pengguna digunakan untuk menyimpan informasi akun yang dimiliki oleh admin maupun pelanggan. Atribut seperti id, nama, username, dan password dibuat private agar data akun tidak dapat diakses atau diubah secara langsung oleh class lain. Untuk mengakses dan mengubah data tertentu, program menggunakan getter dan setter yang telah disediakan. Khusus untuk password, program menyediakan method cocokPassword() untuk memeriksa kesesuaian password saat pengguna melakukan login, sehingga proses pengecekan dilakukan langsung di dalam class Pengguna. <br>
-
+</p>
 Contoh implementasi enkapsulasi pada kelas Pengguna:
+
 ```java
 public abstract class Pengguna {
     private int id;
@@ -282,11 +288,13 @@ public abstract class Pengguna {
 ```
  
 ### Inheritance
+<p align="justify">
 Inheritance merupakan konsep OOP yang memungkinkan sebuah class mewarisi atribut dan metode dari class lain menggunakan extends. Class yang memberikan pewarisan disebut superclass, sedangkan class yang menerima pewarisan disebut subclass. Konsep ini membantu mengurangi penulisan kode yang berulang karena atribut dan metode yang sama cukup didefinisikan pada class induk.
 
 Pada program Haulectra ini, konsep pewarisan diterapkan pada pengelolaan akun admin dan pelanggan. Kedua class tersebut mewarisi atribut serta metode dari class Pengguna, sehingga memiliki struktur dasar akun yang sama. Perbedaannya terletak pada atribut tambahan dan peran masing-masing akun di dalam program.
-
+</p>
 Contoh implementasi kode:
+
 ```java
 public class Admin extends Pengguna {
 
@@ -309,9 +317,12 @@ public class Admin extends Pengguna {
 }
 ```
 ### Polymorphism
+<p align="justify">
 Polymorphism merupakan konsep OOP yang memungkinkan suatu metode memiliki cara kerja yang berbeda sesuai dengan objek atau parameter yang digunakan. Konsep ini dapat diterapkan melalui overriding, yaitu menimpa metode dari class induk, dan overloading, yaitu menggunakan nama metode yang sama dengan parameter berbeda.
-
+  
 Pada program Haulectra, konsep ini diterapkan dalam pengelolaan voucher promo. Program menyediakan dua jenis voucher, yaitu persentase dan nominal, yang memiliki cara perhitungan diskon berbeda meskipun menggunakan nama metode yang sama. Selain itu, program juga menggunakan overloading untuk menampilkan format tanggal sesuai dengan jenis data yang diterima.
+</p>
+
 Contoh implementasi overriding:
 ```java
  public static class Persen extends Promo {
@@ -358,17 +369,20 @@ Aplikasi Haulectra memiliki dua bagian utama, yaitu
 Masing-masing memiliki fitur dan hak akses yang berbeda
 sesuai dengan kebutuhan pengguna.
 
-### 01. Dashboard Admin — Kelola Produk
-ini masih contoh ya gambarnya belum sesuai
+### 01. Halaman Login dan Registrasi
+ini merupakan halaman awal yang digunakan pengguna
+untuk mengakses aplikasi Haulectra.
+
+#### 💻 Login
 <table width="90%" border="0" cellpadding="8">
 <tr>
 <td bgcolor="#26364b" align="center">
-<font color="white">● &nbsp; ● &nbsp; ● &nbsp; HAULECTRA ADMIN</font>
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp;H A U L E C T R A</font>
 </td>
 </tr>
 <tr>
 <td bgcolor="#eef2f8" align="center">
-<img width="400" height="200" alt="data pelanggan" src="https://github.com/user-attachments/assets/1c2f86a1-280b-434e-b277-83dcba0e039b" />
+<img width="700" height="300" alt="login" src="https://github.com/user-attachments/assets/0e7d0859-11c2-4117-8225-d17517a26ed4" />
 </td>
 </tr>
 <tr>
@@ -377,6 +391,365 @@ ini masih contoh ya gambarnya belum sesuai
 </td>
 </tr>
 </table>
+</div>
+✦ Halaman login digunakan sebagai akses masuk ke dalam
+aplikasi Haulectra. Pengguna yang sudah memiliki akun
+dapat memasukkan username dan password pada kolom
+yang tersedia, kemudian menekan tombol Login.
+
+Sistem akan memeriksa informasi akun yang dimasukkan.
+Apabila data sesuai, pengguna akan diarahkan menuju
+halaman utama berdasarkan jenis akun yang digunakan,
+yaitu dashboard admin atau dashboard pelanggan.
+
+#### 💻 Registrasi/Daftra
+<table width="95%" border="0" cellpadding="8">
+<tr>
+<td bgcolor="#263b5c" align="left">
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#edf2f8" align="center">
+<img width="700" height="400" alt="daftar" src="https://github.com/user-attachments/assets/debd4991-634a-4e78-bb36-b9d5b9adbe7b" />
+</td>
+</tr>
+<tr>
+<td bgcolor="#c5ccd6" align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+</td>
+</tr>
+</table>
+</div>
+✦ Halaman registrasi digunakan oleh calon pelanggan
+yang belum memiliki akun untuk mendaftarkan diri
+ke dalam aplikasi Haulectra. Pada halaman ini, pengguna diminta mengisi beberapa informasi pribadi yang dibutuhkan, yaitu nama lengkap,
+username, nomor telepon, alamat, password, dan
+konfirmasi password.
+
+Setelah seluruh data diisi, pengguna dapat menekan
+tombol Daftar untuk menyelesaikan proses pendaftaran.
+Akun yang berhasil dibuat selanjutnya dapat digunakan
+untuk login dan melakukan aktivitas belanja.
+
+### 02. Dashboard Admin
+<p align="justify">
+Dashboard Admin merupakan bagian yang
+digunakan untuk mengelola seluruh kebutuhan operasional
+toko online Haulectra. Admin memiliki akses untuk mengelola informasi produk,
+membuat promo, memantau pesanan, serta melihat data
+pelanggan yang telah terdaftar.
+</p>
+
+#### 💻 Kelola Produk
+<div align="center">
+
+<table width="95%" border="0" cellpadding="8">
+<tr>
+<td bgcolor="#263b5c" align="left">
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A - ADMIN</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#edf2f8" align="center">
+<img width="700" height="400" alt="kelola produk admin" src="https://github.com/user-attachments/assets/e2ac8be0-cf4f-4ffc-8ee4-4ed6f1f6c338" />
+</td>
+</tr>
+<tr>
+<td bgcolor="#c5ccd6" align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+</td>
+</tr>
+</table>
+</div>
+✦ Halaman Kelola Produk digunakan admin untuk mengatur
+seluruh informasi barang yang tersedia di toko online
+Haulectra. Melalui halaman ini, admin dapat melihat
+daftar produk yang telah tersimpan dalam sistem.
+
+Setiap produk ditampilkan dalam bentuk tabel yang
+memuat foto produk, kode produk, nama produk, kategori,
+harga, dan jumlah stok. Informasi tersebut membantu
+admin dalam memantau ketersediaan barang sekaligus
+memastikan data produk yang ditampilkan kepada
+pelanggan tetap sesuai.
+
+Admin juga dapat melakukan perubahan terhadap data
+produk apabila terdapat perubahan harga, stok, maupun
+informasi lainnya.
+
+#### **💻 Kelola Promo**
+<div align="center">
+<table width="100%" border="0" cellpadding="10" cellspacing="0">
+<tr>
+<td bgcolor="#263b5c" align="left">
+<font color="#ffffff">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#edf2f8" align="center">
+<img width="700" height="400" alt="kelola promo admin" src="https://github.com/user-attachments/assets/59b23bd0-c44f-4f25-ae32-206a5e54828a" />
+</td>
+</tr>
+<tr>
+<td bgcolor="#c5ccd6" align="center">
+<font color="#263b5c">Gambar 8. Tampilan Halaman Kelola Promo Admin</font>
+</td>
+</tr>
+</table>
+<p align="justify">
+✦ Halaman kelola promo digunakan admin untuk mengatur berbagai voucher atau potongan harga yang dapat digunakan pelanggan ketika melakukan transaksi. Informasi yang ditampilkan meliputi kode voucher, jenis promo, jumlah potongan, minimal jumlah barang, tanggal mulai, dan tanggal berakhirnya promo.
+
+Admin dapat mencari promo tertentu melalui kolom pencarian. Untuk membuat promo baru, admin dapat menekan tombol **Tambah Promo** dan mengisi informasi promo yang diperlukan.
+
+Selain itu, admin dapat menggunakan tombol **Ubah** untuk memperbarui ketentuan promo dan tombol **Hapus** untuk menghapus promo yang sudah tidak diperlukan. Promo yang telah dibuat nantinya akan ditampilkan pada halaman beranda pelanggan sehingga dapat diketahui dan digunakan sesuai ketentuannya.
+</p>
+
+#### **💻 Kelola Pesanan**
+<div align="center">
+
+<table width="95%" border="0" cellpadding="8">
+<tr>
+<td bgcolor="#263b5c" align="left">
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A - ADMIN</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#edf2f8" align="center">
+<img width="700" height="400" alt="kelola pesanan" src="https://github.com/user-attachments/assets/ffb74b55-063a-4ed3-b441-335190e6050e" />
+</td>
+</tr>
+<tr>
+<td bgcolor="#c5ccd6" align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+</td>
+</tr>
+</table>
+</div>
+<p align="justify">
+✦ Halaman Kelola Pesanan digunakan admin untuk memantau
+dan mengelola transaksi pembelian yang dilakukan
+oleh pelanggan. Pada halaman ini, admin dapat melihat
+daftar pesanan yang masuk beserta informasi nomor
+pesanan, tanggal transaksi, nama pelanggan, total
+pembayaran, status pesanan, dan nomor resi pengiriman.
+
+Setiap pesanan memiliki status yang menunjukkan
+perkembangan proses transaksi. Admin dapat membuka
+detail pesanan untuk melihat informasi transaksi
+secara lebih lengkap.
+
+Selain itu, admin dapat melakukan proses pengiriman
+pada pesanan yang tersedia untuk dikirim. Setelah
+proses pengiriman dilakukan, informasi nomor resi
+dapat ditampilkan pada daftar pesanan.
+</p>
+
+#### **💻 Data Pelanggan**
+<div align="center">
+
+<table width="95%" border="0" cellpadding="8">
+<tr>
+<td bgcolor="#263b5c" align="left">
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A - ADMIN</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#edf2f8" align="center">
+<img width="700" height="400" alt="data pelanggan" src="https://github.com/user-attachments/assets/904a03ab-4de3-410b-afd7-38ab60be67f1" />
+</td>
+</tr>
+<tr>
+<td bgcolor="#c5ccd6" align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+</td>
+</tr>
+</table>
+</div>
+<p align="justify">
+✦ Halaman Data Pelanggan digunakan admin untuk melihat
+informasi seluruh pelanggan yang telah mendaftarkan
+akun pada aplikasi Haulectra. Data pelanggan ditampilkan dalam bentuk tabel yang memuat kode pelanggan, nama lengkap, username,
+nomor telepon, alamat, serta tanggal bergabung.
+Informasi ini dapat membantu admin dalam mengetahui
+data pengguna yang telah terdaftar dan melakukan
+pemantauan terhadap pelanggan toko.
+</p>
+
+### 03. Dashboard Pelanggan
+<p align="justify">
+Dashboard Pelanggan ini merupakan bagian aplikasi yang
+digunakan pelanggan untuk melakukan aktivitas belanja
+secara online. Melalui dashboard ini, pelanggan dapat melihat katalog
+produk, memilih barang yang diinginkan, mengatur
+keranjang belanja, memantau riwayat transaksi,
+serta mengelola informasi profil.
+</p>
+
+#### **💻 Beranda dan Katalog Produk**
+<div align="center">
+
+<table width="95%" border="0" cellpadding="8">
+<tr>
+<td bgcolor="#263b5c" align="left">
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#edf2f8" align="center">
+<img width="700" height="400" alt="beranda" src="https://github.com/user-attachments/assets/a8c565e9-cb14-4c58-90c4-e60575037f8e" />
+</td>
+</tr>
+<tr>
+<td bgcolor="#c5ccd6" align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+</td>
+</tr>
+</table>
+</div>
+<p align="justify">
+✦ Halaman Beranda merupakan halaman utama yang akan
+ditampilkan setelah pelanggan berhasil login.
+Pada halaman ini, pelanggan dapat melihat berbagai
+produk elektronik dan aksesoris yang tersedia
+di toko online Haulectra.
+
+Produk ditampilkan dalam bentuk katalog yang
+memuat foto, nama produk, kategori, harga, serta
+jumlah stok. Tampilan ini membantu pelanggan
+membandingkan dan memilih produk sebelum melakukan
+pembelian.
+
+Selain katalog produk, halaman beranda juga
+menampilkan informasi promo yang sedang tersedia.
+Dengan demikian, pelanggan dapat mengetahui voucher
+yang dapat digunakan sesuai dengan ketentuan
+pembelian.
+</p>
+
+#### **💻 Keranjang Belanja**
+<div align="center">
+
+<table width="95%" border="0" cellpadding="8">
+<tr>
+<td bgcolor="#263b5c" align="left">
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#edf2f8" align="center">
+<img width="700" height="400" alt="keranjang" src="https://github.com/user-attachments/assets/549a7ef8-50d0-4fda-91db-01a198669909" />
+</td>
+</tr>
+<tr>
+<td bgcolor="#c5ccd6" align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+</td>
+</tr>
+</table>
+</div>
+<p align="justify">
+✦ Halaman Keranjang Belanja digunakan untuk menampilkan
+seluruh produk yang telah dipilih pelanggan dari
+halaman katalog.
+
+Pada halaman ini, pelanggan dapat memeriksa kembali
+barang yang ingin dibeli sebelum melanjutkan proses
+checkout. Setiap produk ditampilkan dengan informasi
+nama produk, foto, harga satuan, jumlah barang,
+serta total harga berdasarkan kuantitas yang dipilih.
+
+Pelanggan juga dapat menyesuaikan jumlah barang
+sesuai kebutuhan. Sistem akan menampilkan perubahan
+jumlah barang dan subtotal secara langsung sehingga
+pelanggan dapat mengetahui total belanja sementara
+sebelum melanjutkan transaksi.
+</p>
+
+#### **💻 Riwayat Pesanan**
+<div align="center">
+
+<table width="95%" border="0" cellpadding="8">
+<tr>
+<td bgcolor="#263b5c" align="left">
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#edf2f8" align="center">
+<img width="700" height="400" alt="riwayat pesanan" src="https://github.com/user-attachments/assets/61f5733a-83f3-4582-bbcb-d8515fb7ebae" />
+</td>
+</tr>
+<tr>
+<td bgcolor="#c5ccd6" align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+</td>
+</tr>
+</table>
+</div>
+<p align="justify">
+✦ Halaman Riwayat Pesanan digunakan pelanggan untuk
+melihat daftar transaksi yang pernah dilakukan
+melalui aplikasi Haulectra. Setiap transaksi ditampilkan dengan informasi nomor pesanan, tanggal pembelian, nama produk,
+total pembayaran, serta status pesanan.
+Dengan adanya halaman ini, pelanggan dapat
+mengetahui perkembangan pesanan tanpa harus
+menghubungi admin secara langsung.
+
+Pelanggan juga dapat mencari transaksi tertentu
+melalui kolom pencarian dan menggunakan filter
+status untuk mempermudah pencarian pesanan.
+Tombol Detail Pesanan dapat digunakan untuk
+melihat informasi transaksi secara lebih lengkap.
+</p>
+
+#### **💻 Profil Pelanggan**
+<div align="center">
+
+<table width="95%" border="0" cellpadding="8">
+<tr>
+<td bgcolor="#263b5c" align="left">
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#edf2f8" align="center">
+<img width="700" height="400" alt="profill bener" src="https://github.com/user-attachments/assets/9cff06d7-a7f9-4c16-99fd-f4ee38b15f39" />
+</td>
+</tr>
+<tr>
+<td bgcolor="#c5ccd6" align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+</td>
+</tr>
+</table>
+</div>
+<p align="justify">
+✦ Halaman Profil digunakan pelanggan untuk melihat
+informasi akun yang telah didaftarkan pada aplikasi
+Haulectra.
+
+Informasi yang ditampilkan meliputi kode pelanggan,
+nama lengkap, username, nomor telepon, tanggal
+bergabung, dan alamat pengiriman. Data tersebut
+digunakan sebagai informasi identitas pelanggan
+selama menggunakan aplikasi.
+
+Apabila terdapat perubahan informasi pribadi,
+pelanggan dapat menekan tombol Ubah Data untuk
+memperbarui informasi yang diperlukan sehingga
+data akun dan alamat pengiriman tetap sesuai.
+</p>
+
+
+
+
+
+
+
+
+
+
 
 ## ↳ Anggota Kelompok 
 
@@ -386,3 +759,8 @@ ini masih contoh ya gambarnya belum sesuai
 | 2509116019 | 2509116072 | 2509116075 | 2509116102 |
 | Sistem Informasi A'25| Sistem Informasi B'25| Sistem Informasi B'25| Sistem Informasi C'25 |
 
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F8CFF,100:8EC5FC&height=120&section=footer"/>
+
+</div>
