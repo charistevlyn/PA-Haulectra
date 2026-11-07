@@ -7,7 +7,7 @@
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-JDK%2017-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Java-JDK%2017-ED8B00?style=for-the-badge&logo=openjdk&logoColor=red"/>
   <img src="https://img.shields.io/badge/Java%20Swing-GUI-5382A1?style=for-the-badge&logo=java&logoColor=white"/>
   <img src="https://img.shields.io/badge/MySQL-8.x-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
   <img src="https://img.shields.io/badge/SQL-Database%20Query-336791?style=for-the-badge&logo=mysql&logoColor=white"/>
