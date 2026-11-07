@@ -4,6 +4,7 @@
 <img width="800" height="200" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
 </div>
 
+---
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-JDK%2017-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
@@ -24,6 +25,7 @@
   <img src="https://img.shields.io/badge/Microsoft%20Word-Document-2B579A?style=for-the-badge&logo=microsoftword&logoColor=white"/>
   <img src="https://img.shields.io/badge/Microsoft%20Excel-Spreadsheet-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"/>
 </p>
+
 
 
 
