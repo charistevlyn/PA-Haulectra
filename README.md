@@ -6,25 +6,27 @@
 
 ---
 
+```html
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-JDK%2017-ED8B00?style=for-the-badge&logo=openjdk&logoColor=red"/>
+  <img src="https://img.shields.io/badge/Java-JDK%2017-F89820?style=for-the-badge&logo=openjdk&logoColor=white"/>
   <img src="https://img.shields.io/badge/Java%20Swing-GUI-5382A1?style=for-the-badge&logo=java&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MySQL-8.x-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL-8.x-00758F?style=for-the-badge&logo=mysql&logoColor=white"/>
   <img src="https://img.shields.io/badge/SQL-Database%20Query-336791?style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hibernate-6.6.4.Final-59666C?style=for-the-badge&logo=hibernate&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Hibernate-6.6.4.Final-8A9A5B?style=for-the-badge&logo=hibernate&logoColor=white"/>
   <img src="https://img.shields.io/badge/JCalendar-1.4-2E8B57?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/MySQL%20Connector%2FJ-8.3.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
   <img src="https://img.shields.io/badge/Maven-Apache%20Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white"/>
   <img src="https://img.shields.io/badge/NetBeans-Apache%20NetBeans-1B6AC6?style=for-the-badge&logo=apachenetbeanside&logoColor=white"/>
   <img src="https://img.shields.io/badge/Architecture-MVC-7952B3?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Pattern-DAO-7952B3?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Pattern-DAO-9B59B6?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-Repository-24292F?style=for-the-badge&logo=github&logoColor=white"/>
   <img src="https://img.shields.io/badge/Figma-Design-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
   <img src="https://img.shields.io/badge/Chrome-Browser-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white"/>
   <img src="https://img.shields.io/badge/Microsoft%20Word-Document-2B579A?style=for-the-badge&logo=microsoftword&logoColor=white"/>
   <img src="https://img.shields.io/badge/Microsoft%20Excel-Spreadsheet-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"/>
 </p>
+```
 
 
 
