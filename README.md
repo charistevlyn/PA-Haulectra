@@ -6,7 +6,6 @@
 
 ---
 
-```html
 <p align="center">
   <img src="https://img.shields.io/badge/Java-JDK%2017-F89820?style=for-the-badge&logo=openjdk&logoColor=white"/>
   <img src="https://img.shields.io/badge/Java%20Swing-GUI-5382A1?style=for-the-badge&logo=java&logoColor=white"/>
@@ -26,7 +25,6 @@
   <img src="https://img.shields.io/badge/Microsoft%20Word-Document-2B579A?style=for-the-badge&logo=microsoftword&logoColor=white"/>
   <img src="https://img.shields.io/badge/Microsoft%20Excel-Spreadsheet-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"/>
 </p>
-```
 
 
 
