@@ -749,9 +749,14 @@ data akun dan alamat pengiriman tetap sesuai.
 |<img width="180" height="220" alt="WhatsApp Image 2026-11-06 at 12 42 32" src="https://github.com/user-attachments/assets/7de9643c-2b9e-44b1-903c-8032a8dbe221" />|<img width="180" height="220" alt="Syavira Firnanda Prawiro-poto hbd" src="https://github.com/user-attachments/assets/b9ee00a3-2fea-4937-bf05-0ff72124ac12" />|<img width="180" height="220" alt="IMG_4716" src="https://github.com/user-attachments/assets/4e0f66d5-4703-44b3-a3a7-df70957b5bd3" />|<img width="180" height="220" alt="WhatsApp Image 2026-11-06 at 12 22 45" src="https://github.com/user-attachments/assets/21fc7d0b-e151-4f8b-a99b-dd733430fcb3" />|
 | 2509116019 | 2509116072 | 2509116075 | 2509116102 |
 | Sistem Informasi A'25| Sistem Informasi B'25| Sistem Informasi B'25| Sistem Informasi C'25 |
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F8CFF,100:8EC5FC&height=120&section=footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:64B5F6,50:1976D2,100:0D47A1&height=150&section=footer&animation=twinkling"/>
+
+<br>
+
+<h3>💙 Thank You for Visiting HAUL 💙</h3>
+
+<p>Made with passion by Kelompok 19</p>
 
 </div>
