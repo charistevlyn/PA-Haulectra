@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=30&duration=3000&pause=1000&color=4F8CFF&center=true&vCenter=true&random=false&width=1200&height=100&lines=Sistem+Penjualan+Online+dengan+Pengelolaan+Produk%2C+Stok+dan+Promo.;Platform+E-Commerce+Haul;Kelompok+19+Orang-Orang+Keren"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=31&duration=3000&pause=100&color=4F8CFF&center=true&vCenter=true&random=false&width=1200&height=100&lines=Sistem+Penjualan+Online+dengan+Pengelolaan+Produk%2C+Stok+dan+Promo.;Platform+E-Commerce+Haul;Kelompok+19+Orang-Orang+Keren"/>
 
 </div>
 
