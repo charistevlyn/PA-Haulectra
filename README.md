@@ -377,7 +377,7 @@ untuk mengakses aplikasi Haulectra.
 <div align="center">
 <table width="90%" border="0" cellpadding="8">
 <tr>
-<td bgcolor="#26364b" align="center">
+<td bgcolor="#26364b" align="left">
 <font color="white">● &nbsp; ● &nbsp; ● &nbsp;H A U L E C T R A</font>
 </td>
 </tr>
@@ -448,7 +448,7 @@ pelanggan yang telah terdaftar.
 <table width="95%" border="0" cellpadding="8">
 <tr>
 <td bgcolor="#263b5c" align="left">
-<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A - ADMIN</font>
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A</font>
 </td>
 </tr>
 <tr>
@@ -511,7 +511,7 @@ Selain itu, admin dapat menggunakan tombol **Ubah** untuk memperbarui ketentuan 
 <table width="95%" border="0" cellpadding="8">
 <tr>
 <td bgcolor="#263b5c" align="left">
-<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A - ADMIN</font>
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A</font>
 </td>
 </tr>
 <tr>
@@ -551,7 +551,7 @@ dapat ditampilkan pada daftar pesanan.
 <table width="95%" border="0" cellpadding="8">
 <tr>
 <td bgcolor="#263b5c" align="left">
-<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A - ADMIN</font>
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; H A U L E C T R A</font>
 </td>
 </tr>
 <tr>
