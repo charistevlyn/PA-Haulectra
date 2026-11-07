@@ -55,17 +55,25 @@ Haulectra merupakan perusahaan yang bergerak di bidang *e-commerce* dengan menye
 | Logout | Mengakhiri sesi admin dan kembali ke halaman login. |
 
 ## ↳ Tech Stack
-
-
 Teknologi yang digunakan dalam proses pengembangan aplikasi Haulectra meliputi:
 | Kategori | Teknologi | Keterangan |
 |---|---|---|
-| Bahasa Pemrograman | **Java 17** | Digunakan untuk membangun logika aplikasi dan menerapkan konsep OOP. |
+| Bahasa Pemrograman | **Java 17 (JDK 17)** | Digunakan untuk membangun logika aplikasi dan menerapkan konsep OOP. |
 | GUI | **Java Swing** | Digunakan untuk membuat antarmuka aplikasi desktop, seperti halaman login, form, tabel, dan dialog. |
 | Database | **MySQL 8** | Digunakan untuk menyimpan dan mengelola data pengguna, produk, promo, pesanan, pembayaran, dan pengiriman. |
-| Database Driver | **MySQL Connector/J** | Digunakan untuk menghubungkan aplikasi Java dengan database MySQL. |
+| Bahasa Query | **SQL** | Digunakan untuk membuat tabel, mengelola data, mengatur hak akses, dan transaksi database. |
 | Build Tool | **Apache Maven** | Digunakan untuk mengelola dependency dan proses build project. |
-| Arsitektur | **MVC dan DAO** | Digunakan untuk memisahkan bagian tampilan, pengelolaan alur program, model data, dan akses database. |
+| IDE | **Apache NetBeans** | Digunakan sebagai lingkungan pengembangan untuk menulis, menjalankan, dan mengelola kode program Java. |
+| Version Control | **Git** | Digunakan untuk mencatat perubahan kode dan mengelola versi project selama proses pengembangan. |
+| Platform Kolaborasi | **GitHub** | Digunakan untuk menyimpan repository project dan memudahkan kolaborasi antaranggota tim. |
+| Web Browser | **Google Chrome** | Digunakan untuk mencari referensi, dokumentasi, dan informasi pendukung selama pengerjaan project. |
+| Pengolah Dokumen | **Microsoft Word** | Digunakan untuk menyusun laporan project, mulai dari penjelasan program hingga dokumentasi hasil pengerjaan. |
+| Desain Presentasi | **Canva** | Digunakan untuk membuat slide deck presentasi yang menjelaskan project Haul. |
+| Pengolah Spreadsheet | **Microsoft Excel** | Digunakan untuk membuat catatan dan rekapitulasi laporan penjualan agar data transaksi lebih mudah dikelola. |
+| Arsitektur | **MVC dan DAO** | Digunakan untuk memisahkan bagian tampilan, alur program, model data, dan akses database. |
+| Library | **Hibernate ORM 6.6.4.Final** | Digunakan untuk menghubungkan class Java dengan tabel database dan mempermudah pengelolaan data. |
+| Library | **JCalendar 1.4** | Digunakan untuk menyediakan komponen kalender pada form pengelolaan tanggal promo. |
+| Library | **MySQL Connector/J 8.3.0** | Digunakan untuk menghubungkan aplikasi Java dengan database MySQL. |
 
 ## ↳ Perancangan Sistem
 ### Flowchart
@@ -326,6 +334,143 @@ public abstract String getPeran();
 public abstract String getKeterangan()
 ```
 ## ↳ Alur Program
+
+<p align="center">
+  Dokumentasi penggunaan sistem Haulectra dari awal
+  hingga proses pengelolaan produk dan transaksi.
+</p>
+
+<h3> A. Halaman Login dan Registrasi </h3>
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <b>1. Halaman Login</b><br><br>
+      <img src="haulectra_readme_assets/01-login.jpg" width="100%">
+      <p align="justify">
+        Halaman login digunakan oleh pengguna untuk masuk
+        ke sistem dengan memasukkan username dan password
+        yang telah terdaftar. Sistem akan mengarahkan
+        pengguna ke dashboard sesuai dengan perannya.
+      </p>
+    </td>
+    <td align="center" width="50%">
+      <b>2. Halaman Registrasi</b><br><br>
+      <img src="haulectra_readme_assets/02-daftar.jpg" width="100%">
+      <p align="justify">
+        Pengguna yang belum memiliki akun dapat melakukan
+        pendaftaran dengan mengisi nama lengkap, username,
+        nomor telepon, alamat, dan password. Setelah
+        registrasi berhasil, pengguna dapat login.
+      </p>
+    </td>
+  </tr>
+</table>
+
+<h3>B. Dashboard Admin</h3>
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <b>3. Kelola Produk</b><br><br>
+      <img src="haulectra_readme_assets/03-admin-produk.jpg" width="100%">
+      <p align="justify">
+        Admin dapat melihat daftar produk beserta foto,
+        kode, nama produk, kategori, harga, dan stok.
+        Admin juga dapat menambahkan, mengubah,
+        menghapus, mencari, dan memfilter produk.
+      </p>
+    </td>
+    <td align="center" width="50%">
+      <b>4. Kelola Promo</b><br><br>
+      <img src="haulectra_readme_assets/04-admin-promo.jpg" width="100%">
+      <p align="justify">
+        Admin dapat mengelola voucher promo yang tersedia,
+        mulai dari menambahkan promo, mengubah informasi,
+        hingga menghapus promo. Informasi promo meliputi
+        kode voucher, jenis potongan, minimal barang,
+        serta tanggal berlaku.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <b>5. Kelola Pesanan</b><br><br>
+      <img src="haulectra_readme_assets/05-admin-pesanan.jpg" width="100%">
+      <p align="justify">
+        Admin dapat melihat seluruh pesanan pelanggan,
+        mencari pesanan, memfilter berdasarkan status,
+        melihat detail transaksi, memproses pengiriman,
+        serta mencetak laporan pesanan.
+      </p>
+    </td>
+    <td align="center" width="50%">
+      <b>6. Data Pelanggan</b><br><br>
+      <img src="haulectra_readme_assets/06-admin-pelanggan.jpg" width="100%">
+      <p align="justify">
+        Halaman ini menampilkan informasi pelanggan
+        yang telah terdaftar, seperti kode pelanggan,
+        nama, username, nomor telepon, alamat,
+        dan tanggal bergabung. Admin dapat mencari
+        data pelanggan melalui kolom pencarian.
+      </p>
+    </td>
+  </tr>
+</table>
+
+<h3>C. Dashboard Pelanggan</h3>
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <b>7. Beranda dan Katalog Produk</b><br><br>
+      <img src="haulectra_readme_assets/07-pelanggan-beranda.jpg" width="100%">
+      <p align="justify">
+        Pelanggan dapat melihat katalog produk,
+        informasi harga, kategori, dan stok.
+        Pelanggan juga dapat mencari produk,
+        melihat detail produk, memasukkan produk
+        ke keranjang, serta melihat promo yang tersedia.
+      </p>
+    </td>
+    <td align="center" width="50%">
+      <b>8. Keranjang Belanja</b><br><br>
+      <img src="haulectra_readme_assets/08-pelanggan-keranjang.jpg" width="100%">
+      <p align="justify">
+        Halaman keranjang menampilkan produk yang
+        dipilih pelanggan. Pelanggan dapat menambah
+        atau mengurangi jumlah barang, menghapus
+        produk, melihat subtotal, dan melanjutkan
+        proses checkout.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <b>9. Riwayat Pesanan</b><br><br>
+      <img src="haulectra_readme_assets/09-pelanggan-riwayat.jpg" width="100%">
+      <p align="justify">
+        Pelanggan dapat melihat daftar transaksi
+        yang pernah dilakukan, termasuk nomor pesanan,
+        tanggal, produk, total pembayaran, dan status
+        pesanan. Pelanggan juga dapat melihat detail
+        pesanan yang tersedia.
+      </p>
+    </td>
+    <td align="center" width="50%">
+      <b>10. Profil Pelanggan</b><br><br>
+      <img src="haulectra_readme_assets/10-pelanggan-profil.jpg" width="100%">
+      <p align="justify">
+        Halaman profil menampilkan informasi akun
+        pelanggan, seperti kode pelanggan, nama lengkap,
+        username, nomor telepon, tanggal bergabung,
+        dan alamat pengiriman. Pelanggan dapat
+        mengubah data profil melalui tombol Ubah Data.
+      </p>
+    </td>
+  </tr>
+</table>
+
 
 ## ↳ Anggota Kelompok 
 
