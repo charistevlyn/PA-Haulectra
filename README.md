@@ -1,3 +1,10 @@
+<p align="center"><em>Sistem Penjualan Online dengan pengelolaan Produk, Stok dan Promo</em></p>
+
+<p align="center">
+<img width="800" height="200" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
+</div>
+
+
 <p align="center">
   <img src="https://img.shields.io/badge/Java-JDK%2017-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
   <img src="https://img.shields.io/badge/Java%20Swing-GUI-5382A1?style=for-the-badge&logo=java&logoColor=white"/>
@@ -18,13 +25,6 @@
   <img src="https://img.shields.io/badge/Microsoft%20Excel-Spreadsheet-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"/>
 </p>
 
-
-
-<p align="center"><em>Sistem Penjualan Online dengan pengelolaan Produk, Stok dan Promo</em></p>
-
-<p align="center">
-<img width="800" height="200" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
-</div>
 
 
 ---
