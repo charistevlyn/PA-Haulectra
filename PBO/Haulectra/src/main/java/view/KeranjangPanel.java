@@ -49,7 +49,6 @@ public class KeranjangPanel extends javax.swing.JPanel implements Halaman {
         induk.perbaruiKeranjang();
     }
 
-    // Lebar daftar barang mengikuti lebar jendela.
     private void sesuaikanLebar() {
         int w = scrDaftar.getViewport().getWidth();
         if (w <= 0) return;

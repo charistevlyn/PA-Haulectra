@@ -61,11 +61,9 @@ public class BerandaPanel extends javax.swing.JPanel implements Halaman {
         sesuaikanLebar();
     }
 
-    // Lebar isi mengikuti lebar jendela supaya kartu tidak terpotong di kanan.
     private void sesuaikanLebar() {
         int w = scrBeranda.getViewport().getWidth();
         if (w <= 0) return;
-        // 3 kolom kalau muat, kalau jendela sempit turun ke 2 atau 1 kolom
         int kolom = Math.max(1, Math.min(3, (w - 64 + 16) / (380 + 16)));
         ((java.awt.GridLayout) pnlProduk.getLayout()).setColumns(kolom);
         pnlKonten.setPreferredSize(null);
