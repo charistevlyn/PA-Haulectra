@@ -334,143 +334,30 @@ public abstract String getPeran();
 public abstract String getKeterangan()
 ```
 ## ↳ Alur Program
+Aplikasi Haulectra memiliki dua bagian utama, yaitu
+**Dashboard Admin** dan **Dashboard Pelanggan**.
+Masing-masing memiliki fitur dan hak akses yang berbeda
+sesuai dengan kebutuhan pengguna.
 
-<p align="center">
-  Dokumentasi penggunaan sistem Haulectra dari awal
-  hingga proses pengelolaan produk dan transaksi.
-</p>
-
-<h3> A. Halaman Login dan Registrasi </h3>
-
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <b>1. Halaman Login</b><br><br>
-      <img src="haulectra_readme_assets/01-login.jpg" width="100%">
-      <p align="justify">
-        Halaman login digunakan oleh pengguna untuk masuk
-        ke sistem dengan memasukkan username dan password
-        yang telah terdaftar. Sistem akan mengarahkan
-        pengguna ke dashboard sesuai dengan perannya.
-      </p>
-    </td>
-    <td align="center" width="50%">
-      <b>2. Halaman Registrasi</b><br><br>
-      <img src="haulectra_readme_assets/02-daftar.jpg" width="100%">
-      <p align="justify">
-        Pengguna yang belum memiliki akun dapat melakukan
-        pendaftaran dengan mengisi nama lengkap, username,
-        nomor telepon, alamat, dan password. Setelah
-        registrasi berhasil, pengguna dapat login.
-      </p>
-    </td>
-  </tr>
+### 01. Dashboard Admin — Kelola Produk
+ini masih contoh ya gambarnya belum sesuai
+<table width="90%" border="0" cellpadding="8">
+<tr>
+<td bgcolor="#26364b" align="center">
+<font color="white">● &nbsp; ● &nbsp; ● &nbsp; HAULECTRA ADMIN</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#eef2f8" align="center">
+<img width="400" height="200" alt="data pelanggan" src="https://github.com/user-attachments/assets/1c2f86a1-280b-434e-b277-83dcba0e039b" />
+</td>
+</tr>
+<tr>
+<td bgcolor="#c5ccd6" align="center">
+━━━━━━━━━━━━━━━━━━━━
+</td>
+</tr>
 </table>
-
-<h3>B. Dashboard Admin</h3>
-
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <b>3. Kelola Produk</b><br><br>
-      <img src="haulectra_readme_assets/03-admin-produk.jpg" width="100%">
-      <p align="justify">
-        Admin dapat melihat daftar produk beserta foto,
-        kode, nama produk, kategori, harga, dan stok.
-        Admin juga dapat menambahkan, mengubah,
-        menghapus, mencari, dan memfilter produk.
-      </p>
-    </td>
-    <td align="center" width="50%">
-      <b>4. Kelola Promo</b><br><br>
-      <img src="haulectra_readme_assets/04-admin-promo.jpg" width="100%">
-      <p align="justify">
-        Admin dapat mengelola voucher promo yang tersedia,
-        mulai dari menambahkan promo, mengubah informasi,
-        hingga menghapus promo. Informasi promo meliputi
-        kode voucher, jenis potongan, minimal barang,
-        serta tanggal berlaku.
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <b>5. Kelola Pesanan</b><br><br>
-      <img src="haulectra_readme_assets/05-admin-pesanan.jpg" width="100%">
-      <p align="justify">
-        Admin dapat melihat seluruh pesanan pelanggan,
-        mencari pesanan, memfilter berdasarkan status,
-        melihat detail transaksi, memproses pengiriman,
-        serta mencetak laporan pesanan.
-      </p>
-    </td>
-    <td align="center" width="50%">
-      <b>6. Data Pelanggan</b><br><br>
-      <img src="haulectra_readme_assets/06-admin-pelanggan.jpg" width="100%">
-      <p align="justify">
-        Halaman ini menampilkan informasi pelanggan
-        yang telah terdaftar, seperti kode pelanggan,
-        nama, username, nomor telepon, alamat,
-        dan tanggal bergabung. Admin dapat mencari
-        data pelanggan melalui kolom pencarian.
-      </p>
-    </td>
-  </tr>
-</table>
-
-<h3>C. Dashboard Pelanggan</h3>
-
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <b>7. Beranda dan Katalog Produk</b><br><br>
-      <img src="haulectra_readme_assets/07-pelanggan-beranda.jpg" width="100%">
-      <p align="justify">
-        Pelanggan dapat melihat katalog produk,
-        informasi harga, kategori, dan stok.
-        Pelanggan juga dapat mencari produk,
-        melihat detail produk, memasukkan produk
-        ke keranjang, serta melihat promo yang tersedia.
-      </p>
-    </td>
-    <td align="center" width="50%">
-      <b>8. Keranjang Belanja</b><br><br>
-      <img src="haulectra_readme_assets/08-pelanggan-keranjang.jpg" width="100%">
-      <p align="justify">
-        Halaman keranjang menampilkan produk yang
-        dipilih pelanggan. Pelanggan dapat menambah
-        atau mengurangi jumlah barang, menghapus
-        produk, melihat subtotal, dan melanjutkan
-        proses checkout.
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <b>9. Riwayat Pesanan</b><br><br>
-      <img src="haulectra_readme_assets/09-pelanggan-riwayat.jpg" width="100%">
-      <p align="justify">
-        Pelanggan dapat melihat daftar transaksi
-        yang pernah dilakukan, termasuk nomor pesanan,
-        tanggal, produk, total pembayaran, dan status
-        pesanan. Pelanggan juga dapat melihat detail
-        pesanan yang tersedia.
-      </p>
-    </td>
-    <td align="center" width="50%">
-      <b>10. Profil Pelanggan</b><br><br>
-      <img src="haulectra_readme_assets/10-pelanggan-profil.jpg" width="100%">
-      <p align="justify">
-        Halaman profil menampilkan informasi akun
-        pelanggan, seperti kode pelanggan, nama lengkap,
-        username, nomor telepon, tanggal bergabung,
-        dan alamat pengiriman. Pelanggan dapat
-        mengubah data profil melalui tombol Ubah Data.
-      </p>
-    </td>
-  </tr>
-</table>
-
 
 ## ↳ Anggota Kelompok 
 
