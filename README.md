@@ -374,6 +374,7 @@ ini merupakan halaman awal yang digunakan pengguna
 untuk mengakses aplikasi Haulectra.
 
 #### 💻 Login
+<div align="center">
 <table width="90%" border="0" cellpadding="8">
 <tr>
 <td bgcolor="#26364b" align="center">
@@ -402,7 +403,8 @@ Apabila data sesuai, pengguna akan diarahkan menuju
 halaman utama berdasarkan jenis akun yang digunakan,
 yaitu dashboard admin atau dashboard pelanggan.
 
-#### 💻 Registrasi/Daftra
+#### 💻 Registrasi/Daftr
+<div align="center">
 <table width="95%" border="0" cellpadding="8">
 <tr>
 <td bgcolor="#263b5c" align="left">
@@ -443,7 +445,6 @@ pelanggan yang telah terdaftar.
 
 #### 💻 Kelola Produk
 <div align="center">
-
 <table width="95%" border="0" cellpadding="8">
 <tr>
 <td bgcolor="#263b5c" align="left">
@@ -493,21 +494,20 @@ informasi lainnya.
 </tr>
 <tr>
 <td bgcolor="#c5ccd6" align="center">
-<font color="#263b5c">Gambar 8. Tampilan Halaman Kelola Promo Admin</font>
+<font color="#263b5c">
 </td>
 </tr>
 </table>
-<p align="justify">
+</div>
 ✦ Halaman kelola promo digunakan admin untuk mengatur berbagai voucher atau potongan harga yang dapat digunakan pelanggan ketika melakukan transaksi. Informasi yang ditampilkan meliputi kode voucher, jenis promo, jumlah potongan, minimal jumlah barang, tanggal mulai, dan tanggal berakhirnya promo.
 
 Admin dapat mencari promo tertentu melalui kolom pencarian. Untuk membuat promo baru, admin dapat menekan tombol **Tambah Promo** dan mengisi informasi promo yang diperlukan.
 
 Selain itu, admin dapat menggunakan tombol **Ubah** untuk memperbarui ketentuan promo dan tombol **Hapus** untuk menghapus promo yang sudah tidak diperlukan. Promo yang telah dibuat nantinya akan ditampilkan pada halaman beranda pelanggan sehingga dapat diketahui dan digunakan sesuai ketentuannya.
-</p>
+
 
 #### **💻 Kelola Pesanan**
 <div align="center">
-
 <table width="95%" border="0" cellpadding="8">
 <tr>
 <td bgcolor="#263b5c" align="left">
@@ -740,15 +740,6 @@ pelanggan dapat menekan tombol Ubah Data untuk
 memperbarui informasi yang diperlukan sehingga
 data akun dan alamat pengiriman tetap sesuai.
 </p>
-
-
-
-
-
-
-
-
-
 
 
 ## ↳ Anggota Kelompok 
