@@ -62,6 +62,7 @@ public class ProdukDialog extends javax.swing.JDialog {
         btnPilihGambar = new javax.swing.JButton();
         lblNamaFile = new javax.swing.JLabel();
         lblErrGambar = new javax.swing.JLabel();
+        pnlFotoSisa = new javax.swing.JPanel();
         pnlData = new javax.swing.JPanel();
         lblNama = new javax.swing.JLabel();
         txtNama = new javax.swing.JTextField();
@@ -146,6 +147,10 @@ public class ProdukDialog extends javax.swing.JDialog {
         lblErrGambar.setText(" ");
         lblErrGambar.setPreferredSize(new java.awt.Dimension(40, 17));
 
+        pnlFotoSisa.setBackground(new java.awt.Color(255, 255, 255));
+        pnlFotoSisa.setOpaque(false);
+        pnlFotoSisa.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
         javax.swing.GroupLayout pnlFotoLayout = new javax.swing.GroupLayout(pnlFoto);
         pnlFoto.setLayout(pnlFotoLayout);
         pnlFotoLayout.setHorizontalGroup(
@@ -154,6 +159,7 @@ public class ProdukDialog extends javax.swing.JDialog {
             .addComponent(btnPilihGambar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblNamaFile, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblErrGambar, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnlFotoSisa, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         pnlFotoLayout.setVerticalGroup(
             pnlFotoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,7 +171,8 @@ public class ProdukDialog extends javax.swing.JDialog {
                 .addComponent(lblNamaFile)
                 .addGap(2, 2, 2)
                 .addComponent(lblErrGambar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40))
+                .addGap(0, 0, 0)
+                .addComponent(pnlFotoSisa, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pnlData.setBackground(new java.awt.Color(255, 255, 255));
@@ -175,14 +182,14 @@ public class ProdukDialog extends javax.swing.JDialog {
         lblNama.setForeground(new java.awt.Color(52, 64, 84));
         lblNama.setText("Nama produk");
 
+        txtNama.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
         txtNama.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         txtNama.setForeground(new java.awt.Color(16, 24, 40));
-        txtNama.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
         txtNama.setPreferredSize(new java.awt.Dimension(320, 38));
 
         lblErrNama.setForeground(new java.awt.Color(217, 45, 32));
-        lblErrNama.setText(" ");
         lblErrNama.setPreferredSize(new java.awt.Dimension(40, 17));
+        lblErrNama.setText(" ");
 
         lblKategori.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblKategori.setForeground(new java.awt.Color(52, 64, 84));
@@ -214,9 +221,9 @@ public class ProdukDialog extends javax.swing.JDialog {
         lblStok.setForeground(new java.awt.Color(52, 64, 84));
         lblStok.setText("Stok");
 
-        txtStok.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
         txtStok.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         txtStok.setForeground(new java.awt.Color(16, 24, 40));
+        txtStok.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
         txtStok.setPreferredSize(new java.awt.Dimension(320, 38));
 
         lblErrStok.setForeground(new java.awt.Color(217, 45, 32));
@@ -401,6 +408,7 @@ public class ProdukDialog extends javax.swing.JDialog {
     private javax.swing.JLabel lblSub;
     private javax.swing.JPanel pnlData;
     private javax.swing.JPanel pnlFoto;
+    private javax.swing.JPanel pnlFotoSisa;
     private javax.swing.JPanel pnlKepala;
     private javax.swing.JPanel pnlLatar;
     private javax.swing.JPanel pnlTombol;

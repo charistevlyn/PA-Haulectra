@@ -53,11 +53,11 @@ public class KartuPromo extends javax.swing.JPanel {
         sepPromo.setForeground(new java.awt.Color(228, 231, 236));
 
         lblKode.setBackground(new java.awt.Color(232, 240, 255));
-        lblKode.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(164, 188, 253)), javax.swing.BorderFactory.createEmptyBorder(3, 10, 3, 10)));
         lblKode.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         lblKode.setForeground(new java.awt.Color(31, 94, 219));
-        lblKode.setOpaque(true);
         lblKode.setText("KODE");
+        lblKode.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(164, 188, 253)), javax.swing.BorderFactory.createEmptyBorder(3, 10, 3, 10)));
+        lblKode.setOpaque(true);
 
         lblBerlaku.setForeground(new java.awt.Color(102, 112, 133));
         lblBerlaku.setText("s.d. tanggal");
@@ -67,14 +67,14 @@ public class KartuPromo extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(lblPotongan, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17)
+                .addComponent(lblPotongan, 0, 205, Short.MAX_VALUE)
+                .addGap(8, 12, 12)
                 .addComponent(lblJenis))
-            .addComponent(lblSyarat, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(sepPromo, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblSyarat, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(sepPromo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(lblKode)
-                .addGap(166, 166, 166)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblBerlaku))
         );
         layout.setVerticalGroup(

@@ -59,18 +59,18 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="lblLogo" min="-2" pref="215" max="-2" attributes="0"/>
+              <Component id="lblLogo" max="32767" attributes="0"/>
               <Group type="102" attributes="0">
                   <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                  <Component id="lblMenu" min="-2" pref="203" max="-2" attributes="0"/>
+                  <Component id="lblMenu" max="32767" attributes="0"/>
               </Group>
-              <Component id="btnProduk" min="-2" pref="215" max="-2" attributes="0"/>
-              <Component id="btnPromo" min="-2" pref="215" max="-2" attributes="0"/>
-              <Component id="btnPesanan" min="-2" pref="215" max="-2" attributes="0"/>
-              <Component id="btnPelanggan" min="-2" pref="215" max="-2" attributes="0"/>
-              <Component id="pnlSisa" min="-2" max="-2" attributes="0"/>
-              <Component id="sepLogout" min="-2" pref="215" max="-2" attributes="0"/>
-              <Component id="btnLogout" min="-2" pref="215" max="-2" attributes="0"/>
+              <Component id="btnProduk" max="32767" attributes="0"/>
+              <Component id="btnPromo" max="32767" attributes="0"/>
+              <Component id="btnPesanan" max="32767" attributes="0"/>
+              <Component id="btnPelanggan" max="32767" attributes="0"/>
+              <Component id="pnlSisa" max="32767" attributes="0"/>
+              <Component id="sepLogout" max="32767" attributes="0"/>
+              <Component id="btnLogout" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -88,8 +88,7 @@
                   <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                   <Component id="btnPelanggan" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
-                  <Component id="pnlSisa" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="pnlSisa" min="0" pref="0" max="32767" attributes="0"/>
                   <Component id="sepLogout" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
                   <Component id="btnLogout" min="-2" max="-2" attributes="0"/>
@@ -363,15 +362,15 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="lblLokasi" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="568" pref="568" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       <Component id="lblNamaAdmin" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblLokasi" min="-2" pref="55" max="-2" attributes="0"/>
-                  <Component id="lblNamaAdmin" min="-2" pref="55" max="-2" attributes="0"/>
+                  <Component id="lblLokasi" max="32767" attributes="0"/>
+                  <Component id="lblNamaAdmin" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -416,18 +415,7 @@
             </Constraint>
           </Constraints>
 
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="713" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="520" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-          </Layout>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
         </Container>
       </SubComponents>
     </Container>

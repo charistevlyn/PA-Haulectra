@@ -17,14 +17,12 @@ public class KartuProduk extends javax.swing.JPanel {
     private final Produk produk;
     private final Consumer<Produk> aksiLihat;
     private final BiConsumer<Produk, Integer> aksiTambah;
-    private final javax.swing.JLabel lblStok = new javax.swing.JLabel();  
 
     public KartuProduk(Produk produk, Consumer<Produk> aksiLihat, BiConsumer<Produk, Integer> aksiTambah) {
         this.produk = produk;
         this.aksiLihat = aksiLihat;
         this.aksiTambah = aksiTambah;
         initComponents();
-        pasangStok();
         lblFoto.setIcon(Gaya.foto(produk.getGambar(), 112, 112));
         lblNama.setText(produk.getNama());
         lblNama.setToolTipText(produk.getNama());
@@ -36,26 +34,13 @@ public class KartuProduk extends javax.swing.JPanel {
         if (habis) btnKeranjang.setBackground(Gaya.GARIS);
     }
 
-    private void pasangStok() {
-        java.awt.GridBagLayout tata = (java.awt.GridBagLayout) getLayout();
-        java.awt.GridBagConstraints batas = tata.getConstraints(lblKategori);
-        remove(lblKategori);
-        lblStok.setFont(lblKategori.getFont());
-        lblStok.setForeground(lblKategori.getForeground());
-        javax.swing.JPanel baris = new javax.swing.JPanel(new java.awt.BorderLayout(8, 0));
-        baris.setOpaque(false);
-        baris.add(lblKategori, java.awt.BorderLayout.CENTER);
-        baris.add(lblStok, java.awt.BorderLayout.EAST);
-        add(baris, batas);
-    }
-
- 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         lblFoto = new javax.swing.JLabel();
         lblKategori = new javax.swing.JLabel();
+        lblStok = new javax.swing.JLabel();
         lblNama = new javax.swing.JLabel();
         lblHarga = new javax.swing.JLabel();
         pnlTombol = new javax.swing.JPanel();
@@ -74,6 +59,9 @@ public class KartuProduk extends javax.swing.JPanel {
         lblKategori.setForeground(new java.awt.Color(102, 112, 133));
         lblKategori.setText("Kategori");
 
+        lblStok.setForeground(new java.awt.Color(102, 112, 133));
+        lblStok.setText("Stok");
+
         lblNama.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblNama.setForeground(new java.awt.Color(16, 24, 40));
         lblNama.setText("Nama produk");
@@ -84,7 +72,6 @@ public class KartuProduk extends javax.swing.JPanel {
 
         pnlTombol.setBackground(new java.awt.Color(255, 255, 255));
         pnlTombol.setOpaque(false);
-        pnlTombol.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         btnLihat.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         btnLihat.setForeground(new java.awt.Color(16, 24, 40));
@@ -98,12 +85,10 @@ public class KartuProduk extends javax.swing.JPanel {
                 btnLihatActionPerformed(evt);
             }
         });
-        pnlTombol.add(btnLihat);
 
         lblJarak.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblJarak.setForeground(new java.awt.Color(16, 24, 40));
         lblJarak.setPreferredSize(new java.awt.Dimension(8, 8));
-        pnlTombol.add(lblJarak);
 
         btnKeranjang.setBackground(new java.awt.Color(31, 94, 219));
         btnKeranjang.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
@@ -120,7 +105,26 @@ public class KartuProduk extends javax.swing.JPanel {
                 btnKeranjangActionPerformed(evt);
             }
         });
-        pnlTombol.add(btnKeranjang);
+
+        javax.swing.GroupLayout pnlTombolLayout = new javax.swing.GroupLayout(pnlTombol);
+        pnlTombol.setLayout(pnlTombolLayout);
+        pnlTombolLayout.setHorizontalGroup(
+            pnlTombolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlTombolLayout.createSequentialGroup()
+                .addComponent(btnLihat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(lblJarak, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(btnKeranjang, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        pnlTombolLayout.setVerticalGroup(
+            pnlTombolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnLihat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(pnlTombolLayout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(lblJarak, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(btnKeranjang, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -128,29 +132,32 @@ public class KartuProduk extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(lblFoto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14)
+                .addGap(14, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblKategori, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblNama, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblHarga, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnlTombol, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblKategori, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(8, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblStok, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblNama, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblHarga, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlTombol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(79, 79, 79)
+                .addGap(6, 6, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblFoto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblKategori)
-                        .addGap(4, 4, 4)
-                        .addComponent(lblNama)
-                        .addGap(4, 4, 4)
-                        .addComponent(lblHarga)
-                        .addGap(12, 12, 12)
-                        .addComponent(pnlTombol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(71, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblKategori, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblStok, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(4, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblNama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(4, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblHarga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(pnlTombol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -170,6 +177,7 @@ public class KartuProduk extends javax.swing.JPanel {
     private javax.swing.JLabel lblJarak;
     private javax.swing.JLabel lblKategori;
     private javax.swing.JLabel lblNama;
+    private javax.swing.JLabel lblStok;
     private javax.swing.JPanel pnlTombol;
     // End of variables declaration//GEN-END:variables
 }

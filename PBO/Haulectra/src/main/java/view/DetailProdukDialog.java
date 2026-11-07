@@ -117,6 +117,7 @@ public class DetailProdukDialog extends javax.swing.JDialog {
 
         pnlJumlah.setBackground(new java.awt.Color(255, 255, 255));
         pnlJumlah.setOpaque(false);
+        pnlJumlah.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         btnKurang.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         btnKurang.setForeground(new java.awt.Color(16, 24, 40));
@@ -130,12 +131,14 @@ public class DetailProdukDialog extends javax.swing.JDialog {
                 btnKurangActionPerformed(evt);
             }
         });
+        pnlJumlah.add(btnKurang);
 
         lblJumlah.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblJumlah.setForeground(new java.awt.Color(16, 24, 40));
         lblJumlah.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblJumlah.setText("1");
         lblJumlah.setPreferredSize(new java.awt.Dimension(56, 38));
+        lblJumlah.setText("1");
+        pnlJumlah.add(lblJumlah);
 
         btnTambah.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         btnTambah.setForeground(new java.awt.Color(16, 24, 40));
@@ -149,24 +152,7 @@ public class DetailProdukDialog extends javax.swing.JDialog {
                 btnTambahActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout pnlJumlahLayout = new javax.swing.GroupLayout(pnlJumlah);
-        pnlJumlah.setLayout(pnlJumlahLayout);
-        pnlJumlahLayout.setHorizontalGroup(
-            pnlJumlahLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlJumlahLayout.createSequentialGroup()
-                .addComponent(btnKurang, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(lblJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(btnTambah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        pnlJumlahLayout.setVerticalGroup(
-            pnlJumlahLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnKurang, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(lblJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(btnTambah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        pnlJumlah.add(btnTambah);
 
         lblDiKeranjang.setForeground(new java.awt.Color(102, 112, 133));
         lblDiKeranjang.setText(" ");
@@ -186,7 +172,7 @@ public class DetailProdukDialog extends javax.swing.JDialog {
             .addComponent(sepInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblDeskripsi, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblJumlahJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(pnlJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnlJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblDiKeranjang, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(pnlSisa, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
         );

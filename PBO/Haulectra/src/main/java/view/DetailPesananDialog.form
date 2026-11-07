@@ -47,9 +47,9 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="pnlKepala" min="-2" max="-2" attributes="0"/>
-              <Component id="pnlIsi" min="-2" max="-2" attributes="0"/>
-              <Component id="pnlTombol" min="-2" max="-2" attributes="0"/>
+              <Component id="pnlKepala" max="32767" attributes="0"/>
+              <Component id="pnlIsi" max="32767" attributes="0"/>
+              <Component id="pnlTombol" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -83,8 +83,8 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lblJudul" min="-2" pref="348" max="-2" attributes="0"/>
-                          <Component id="lblNomor" min="-2" pref="348" max="-2" attributes="0"/>
+                          <Component id="lblJudul" min="0" pref="348" max="32767" attributes="0"/>
+                          <Component id="lblNomor" min="0" pref="348" max="32767" attributes="0"/>
                       </Group>
                       <Component id="lblStatus" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -155,10 +155,10 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="pnlInfo" min="-2" max="-2" attributes="0"/>
-                  <Component id="scrBarang" min="-2" pref="498" max="-2" attributes="0"/>
+                  <Component id="pnlInfo" max="32767" attributes="0"/>
+                  <Component id="scrBarang" min="0" pref="498" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="341" pref="341" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="341" max="32767" attributes="0"/>
                       <Component id="pnlTotal" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -201,32 +201,29 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="lblPenerimaTeks" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="110" max="32767" attributes="0"/>
+                              <Component id="lblPenerimaTeks" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPenerima" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblAlamatTeks" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblAlamat" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
-                          <Component id="lblMetodeTeks" min="-2" pref="173" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="173" max="32767" attributes="0"/>
+                              <Component id="lblMetodeTeks" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblMetode" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblBayarTeks" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblBayar" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
-                          <Component id="lblResiTeks" min="-2" pref="128" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="lblPenerima" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
-                          <Component id="lblMetode" min="-2" pref="173" max="-2" attributes="0"/>
-                          <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
-                          <Component id="lblResi" min="-2" pref="128" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="lblAlamatTeks" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
-                          <Component id="lblBayarTeks" min="-2" pref="173" max="-2" attributes="0"/>
-                          <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
-                          <Component id="lblEstimasiTeks" min="-2" pref="128" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="lblAlamat" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
-                          <Component id="lblBayar" min="-2" pref="173" max="-2" attributes="0"/>
-                          <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
-                          <Component id="lblEstimasi" min="-2" pref="128" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
+                              <Component id="lblResiTeks" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblResi" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblEstimasiTeks" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblEstimasi" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -620,7 +617,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="172" pref="172" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="172" max="32767" attributes="0"/>
                       <Component id="btnTutup" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
                       <Component id="btnDiterima" min="-2" max="-2" attributes="0"/>

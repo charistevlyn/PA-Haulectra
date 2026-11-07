@@ -26,9 +26,9 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="pnlKepala" min="-2" max="-2" attributes="0"/>
-          <Component id="scrPelanggan" min="-2" pref="836" max="-2" attributes="0"/>
-          <Component id="lblJumlah" min="-2" pref="836" max="-2" attributes="0"/>
+          <Component id="pnlKepala" max="32767" attributes="0"/>
+          <Component id="scrPelanggan" pref="828" max="32767" attributes="0"/>
+          <Component id="lblJumlah" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -36,7 +36,7 @@
           <Group type="102" attributes="0">
               <Component id="pnlKepala" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-              <Component id="scrPelanggan" min="-2" pref="312" max="-2" attributes="0"/>
+              <Component id="scrPelanggan" max="32767" attributes="0"/>
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
               <Component id="lblJumlah" min="-2" max="-2" attributes="0"/>
           </Group>
@@ -60,9 +60,9 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="lblJudul" min="-2" pref="836" max="-2" attributes="0"/>
-              <Component id="lblSub" min="-2" max="-2" attributes="0"/>
-              <Component id="pnlFilter" min="-2" pref="836" max="-2" attributes="0"/>
+              <Component id="lblJudul" max="32767" attributes="0"/>
+              <Component id="lblSub" max="32767" attributes="0"/>
+              <Component id="pnlFilter" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">

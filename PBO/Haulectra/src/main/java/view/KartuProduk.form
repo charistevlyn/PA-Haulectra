@@ -39,23 +39,29 @@
               <Component id="lblFoto" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblKategori" min="-2" pref="248" max="-2" attributes="0"/>
-                  <Component id="lblNama" min="-2" pref="248" max="-2" attributes="0"/>
-                  <Component id="lblHarga" min="-2" pref="248" max="-2" attributes="0"/>
-                  <Component id="pnlTombol" min="-2" pref="248" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="lblKategori" min="0" max="32767" attributes="0"/>
+                      <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
+                      <Component id="lblStok" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="lblNama" min="0" max="32767" attributes="0"/>
+                  <Component id="lblHarga" min="0" max="32767" attributes="0"/>
+                  <Component id="pnlTombol" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="79" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblFoto" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="lblKategori" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblKategori" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblStok" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                       <Component id="lblNama" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
@@ -64,7 +70,6 @@
                       <Component id="pnlTombol" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="71" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -92,6 +97,14 @@
           <Color blue="85" green="70" red="66" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Kategori"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblStok">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="85" green="70" red="66" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Stok"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblNama">
@@ -124,10 +137,28 @@
         <Property name="opaque" type="boolean" value="false"/>
       </Properties>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-        <Property name="alignment" type="int" value="0"/>
-        <Property name="horizontalGap" type="int" value="0"/>
-        <Property name="verticalGap" type="int" value="0"/>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Component id="btnLihat" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="lblJarak" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="btnKeranjang" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="btnLihat" min="-2" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="13" pref="13" max="-2" attributes="0"/>
+                  <Component id="lblJarak" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Component id="btnKeranjang" min="-2" max="-2" attributes="0"/>
+          </Group>
+        </DimensionLayout>
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnLihat">

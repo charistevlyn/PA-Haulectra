@@ -297,9 +297,9 @@ public class LoginView extends javax.swing.JFrame {
         pnlPassword.setPreferredSize(new java.awt.Dimension(340, 38));
         pnlPassword.setLayout(new java.awt.BorderLayout());
 
-        txtPassword.setBorder(null);
         txtPassword.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         txtPassword.setForeground(new java.awt.Color(16, 24, 40));
+        txtPassword.setBorder(null);
         txtPassword.setPreferredSize(new java.awt.Dimension(290, 38));
         pnlPassword.add(txtPassword, java.awt.BorderLayout.CENTER);
 
@@ -316,8 +316,8 @@ public class LoginView extends javax.swing.JFrame {
         pnlPassword.add(btnLihatPassword, java.awt.BorderLayout.EAST);
 
         lblErrPassword.setForeground(new java.awt.Color(217, 45, 32));
-        lblErrPassword.setPreferredSize(new java.awt.Dimension(40, 17));
         lblErrPassword.setText(" ");
+        lblErrPassword.setPreferredSize(new java.awt.Dimension(40, 17));
 
         btnLogin.setBackground(new java.awt.Color(31, 94, 219));
         btnLogin.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
@@ -724,14 +724,16 @@ public class LoginView extends javax.swing.JFrame {
         pnlKananLayout.setHorizontalGroup(
             pnlKananLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlKananLayout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(pnlKartu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 17, Short.MAX_VALUE)
+                .addComponent(pnlKartu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 17, Short.MAX_VALUE))
         );
         pnlKananLayout.setVerticalGroup(
             pnlKananLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlKananLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(pnlKartu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 15, Short.MAX_VALUE)
+                .addComponent(pnlKartu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 15, Short.MAX_VALUE))
         );
 
         pnlLatar.add(pnlKanan);

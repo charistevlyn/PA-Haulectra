@@ -17,25 +17,10 @@ public class PromoDialog extends javax.swing.JDialog {
     private final PromoController controller = new PromoController();
     private Promo promo;  
     private boolean tersimpan;
-    private com.toedter.calendar.JDateChooser dcMulai, dcSelesai;  
 
     public PromoDialog(java.awt.Window parent) {
         super(parent, java.awt.Dialog.ModalityType.APPLICATION_MODAL);
         initComponents();
-        dcMulai = gantiDenganKalender(txtMulai);
-        dcSelesai = gantiDenganKalender(txtSelesai);
-    }
-
-    private com.toedter.calendar.JDateChooser gantiDenganKalender(javax.swing.JTextField txt) {
-        java.awt.Container induk = txt.getParent();
-        java.awt.GridBagConstraints batas = ((java.awt.GridBagLayout) induk.getLayout()).getConstraints(txt);
-        induk.remove(txt);
-        com.toedter.calendar.JDateChooser dc = new com.toedter.calendar.JDateChooser();
-        dc.setDateFormatString("dd/MM/yyyy");
-        dc.setFont(txt.getFont());
-        dc.setPreferredSize(txt.getPreferredSize());
-        induk.add(dc, batas);
-        return dc;
     }
 
     private static java.util.Date keDate(java.time.LocalDate tgl) {
@@ -106,11 +91,11 @@ public class PromoDialog extends javax.swing.JDialog {
         pnlTanggal = new javax.swing.JPanel();
         pnlMulai = new javax.swing.JPanel();
         lblMulai = new javax.swing.JLabel();
-        txtMulai = new javax.swing.JTextField();
+        dcMulai = new com.toedter.calendar.JDateChooser();
         lblErrMulai = new javax.swing.JLabel();
         pnlSelesai = new javax.swing.JPanel();
         lblSelesai = new javax.swing.JLabel();
-        txtSelesai = new javax.swing.JTextField();
+        dcSelesai = new com.toedter.calendar.JDateChooser();
         lblErrSelesai = new javax.swing.JLabel();
         pnlTombol = new javax.swing.JPanel();
         btnBatal = new javax.swing.JButton();
@@ -154,14 +139,14 @@ public class PromoDialog extends javax.swing.JDialog {
         lblKode.setForeground(new java.awt.Color(52, 64, 84));
         lblKode.setText("Kode voucher");
 
+        txtKode.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
         txtKode.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         txtKode.setForeground(new java.awt.Color(16, 24, 40));
-        txtKode.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
         txtKode.setPreferredSize(new java.awt.Dimension(380, 38));
 
         lblErrKode.setForeground(new java.awt.Color(217, 45, 32));
-        lblErrKode.setText(" ");
         lblErrKode.setPreferredSize(new java.awt.Dimension(40, 17));
+        lblErrKode.setText(" ");
 
         lblJenis.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblJenis.setForeground(new java.awt.Color(52, 64, 84));
@@ -169,7 +154,6 @@ public class PromoDialog extends javax.swing.JDialog {
 
         pnlJenis.setBackground(new java.awt.Color(255, 255, 255));
         pnlJenis.setOpaque(false);
-        pnlJenis.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         rbPersen.setBackground(new java.awt.Color(255, 255, 255));
         grpJenis.add(rbPersen);
@@ -184,12 +168,10 @@ public class PromoDialog extends javax.swing.JDialog {
                 rbPersenActionPerformed(evt);
             }
         });
-        pnlJenis.add(rbPersen);
 
         lblJarak.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblJarak.setForeground(new java.awt.Color(16, 24, 40));
         lblJarak.setPreferredSize(new java.awt.Dimension(24, 8));
-        pnlJenis.add(lblJarak);
 
         rbNominal.setBackground(new java.awt.Color(255, 255, 255));
         grpJenis.add(rbNominal);
@@ -203,19 +185,38 @@ public class PromoDialog extends javax.swing.JDialog {
                 rbNominalActionPerformed(evt);
             }
         });
-        pnlJenis.add(rbNominal);
+
+        javax.swing.GroupLayout pnlJenisLayout = new javax.swing.GroupLayout(pnlJenis);
+        pnlJenis.setLayout(pnlJenisLayout);
+        pnlJenisLayout.setHorizontalGroup(
+            pnlJenisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlJenisLayout.createSequentialGroup()
+                .addComponent(rbPersen)
+                .addGap(0, 0, 0)
+                .addComponent(lblJarak, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(rbNominal))
+        );
+        pnlJenisLayout.setVerticalGroup(
+            pnlJenisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(rbPersen)
+            .addGroup(pnlJenisLayout.createSequentialGroup()
+                .addGap(7, 7, 7)
+                .addComponent(lblJarak, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(rbNominal)
+        );
 
         lblErrJenis.setForeground(new java.awt.Color(217, 45, 32));
-        lblErrJenis.setPreferredSize(new java.awt.Dimension(40, 17));
         lblErrJenis.setText(" ");
+        lblErrJenis.setPreferredSize(new java.awt.Dimension(40, 17));
 
         lblDiskon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblDiskon.setForeground(new java.awt.Color(52, 64, 84));
         lblDiskon.setText("Besar potongan (%)");
 
+        txtDiskon.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
         txtDiskon.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         txtDiskon.setForeground(new java.awt.Color(16, 24, 40));
-        txtDiskon.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
         txtDiskon.setPreferredSize(new java.awt.Dimension(380, 38));
 
         lblErrDiskon.setForeground(new java.awt.Color(217, 45, 32));
@@ -245,10 +246,9 @@ public class PromoDialog extends javax.swing.JDialog {
         lblMulai.setForeground(new java.awt.Color(52, 64, 84));
         lblMulai.setText("Tanggal mulai");
 
-        txtMulai.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        txtMulai.setForeground(new java.awt.Color(16, 24, 40));
-        txtMulai.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
-        txtMulai.setPreferredSize(new java.awt.Dimension(180, 38));
+        dcMulai.setDateFormatString("dd/MM/yyyy");
+        dcMulai.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        dcMulai.setPreferredSize(new java.awt.Dimension(180, 38));
 
         lblErrMulai.setForeground(new java.awt.Color(217, 45, 32));
         lblErrMulai.setText(" ");
@@ -259,7 +259,7 @@ public class PromoDialog extends javax.swing.JDialog {
         pnlMulaiLayout.setHorizontalGroup(
             pnlMulaiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblMulai, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(txtMulai, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(dcMulai, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblErrMulai, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         pnlMulaiLayout.setVerticalGroup(
@@ -267,7 +267,7 @@ public class PromoDialog extends javax.swing.JDialog {
             .addGroup(pnlMulaiLayout.createSequentialGroup()
                 .addComponent(lblMulai)
                 .addGap(6, 6, 6)
-                .addComponent(txtMulai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(dcMulai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
                 .addComponent(lblErrMulai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -279,26 +279,20 @@ public class PromoDialog extends javax.swing.JDialog {
         lblSelesai.setForeground(new java.awt.Color(52, 64, 84));
         lblSelesai.setText("Tanggal berakhir");
 
-        txtSelesai.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        txtSelesai.setForeground(new java.awt.Color(16, 24, 40));
-        txtSelesai.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(208, 213, 221)), javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10)));
-        txtSelesai.setPreferredSize(new java.awt.Dimension(180, 38));
-        txtSelesai.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtSelesaiActionPerformed(evt);
-            }
-        });
+        dcSelesai.setDateFormatString("dd/MM/yyyy");
+        dcSelesai.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        dcSelesai.setPreferredSize(new java.awt.Dimension(180, 38));
 
         lblErrSelesai.setForeground(new java.awt.Color(217, 45, 32));
-        lblErrSelesai.setPreferredSize(new java.awt.Dimension(40, 17));
         lblErrSelesai.setText(" ");
+        lblErrSelesai.setPreferredSize(new java.awt.Dimension(40, 17));
 
         javax.swing.GroupLayout pnlSelesaiLayout = new javax.swing.GroupLayout(pnlSelesai);
         pnlSelesai.setLayout(pnlSelesaiLayout);
         pnlSelesaiLayout.setHorizontalGroup(
             pnlSelesaiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblSelesai, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(txtSelesai, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(dcSelesai, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblErrSelesai, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         pnlSelesaiLayout.setVerticalGroup(
@@ -306,7 +300,7 @@ public class PromoDialog extends javax.swing.JDialog {
             .addGroup(pnlSelesaiLayout.createSequentialGroup()
                 .addComponent(lblSelesai)
                 .addGap(6, 6, 6)
-                .addComponent(txtSelesai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(dcSelesai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
                 .addComponent(lblErrSelesai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -334,7 +328,7 @@ public class PromoDialog extends javax.swing.JDialog {
             .addComponent(txtKode, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblErrKode, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblJenis, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(pnlJenis, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnlJenis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblErrJenis, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblDiskon, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(txtDiskon, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -477,13 +471,11 @@ public class PromoDialog extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_btnSimpanActionPerformed
 
-    private void txtSelesaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSelesaiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtSelesaiActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBatal;
     private javax.swing.JButton btnSimpan;
+    private com.toedter.calendar.JDateChooser dcMulai;
+    private com.toedter.calendar.JDateChooser dcSelesai;
     private javax.swing.ButtonGroup grpJenis;
     private javax.swing.JLabel lblDiskon;
     private javax.swing.JLabel lblErrDiskon;
@@ -513,7 +505,5 @@ public class PromoDialog extends javax.swing.JDialog {
     private javax.swing.JTextField txtDiskon;
     private javax.swing.JTextField txtKode;
     private javax.swing.JTextField txtMinimal;
-    private javax.swing.JTextField txtMulai;
-    private javax.swing.JTextField txtSelesai;
     // End of variables declaration//GEN-END:variables
 }

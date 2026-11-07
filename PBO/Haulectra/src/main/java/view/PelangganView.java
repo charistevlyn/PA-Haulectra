@@ -90,11 +90,13 @@ public class PelangganView extends javax.swing.JFrame {
         pnlAtas.setBackground(new java.awt.Color(255, 255, 255));
         pnlAtas.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(228, 231, 236)), javax.swing.BorderFactory.createEmptyBorder(0, 28, 0, 28)));
         pnlAtas.setPreferredSize(new java.awt.Dimension(1280, 64));
+        pnlAtas.setLayout(new java.awt.BorderLayout());
 
         lblLogo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblLogo.setForeground(new java.awt.Color(16, 24, 40));
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/ikon/logo.png"))); // NOI18N
         lblLogo.setIconTextGap(10);
+        pnlAtas.add(lblLogo, java.awt.BorderLayout.WEST);
 
         pnlNav.setBackground(new java.awt.Color(255, 255, 255));
         pnlNav.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 32, 0, 0));
@@ -182,6 +184,8 @@ public class PelangganView extends javax.swing.JFrame {
             .addComponent(btnProfil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        pnlAtas.add(pnlNav, java.awt.BorderLayout.CENTER);
+
         pnlAkun.setBackground(new java.awt.Color(255, 255, 255));
         pnlAkun.setOpaque(false);
 
@@ -224,39 +228,14 @@ public class PelangganView extends javax.swing.JFrame {
                 .addComponent(btnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        javax.swing.GroupLayout pnlAtasLayout = new javax.swing.GroupLayout(pnlAtas);
-        pnlAtas.setLayout(pnlAtasLayout);
-        pnlAtasLayout.setHorizontalGroup(
-            pnlAtasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlAtasLayout.createSequentialGroup()
-                .addComponent(lblLogo)
-                .addGap(0, 0, 0)
-                .addComponent(pnlNav, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(pnlAkun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        pnlAtasLayout.setVerticalGroup(
-            pnlAtasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(pnlNav, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(pnlAkun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        pnlAtas.add(pnlAkun, java.awt.BorderLayout.EAST);
 
         getContentPane().add(pnlAtas, java.awt.BorderLayout.NORTH);
 
         pnlHalaman.setBackground(new java.awt.Color(245, 247, 251));
         pnlHalaman.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
-        javax.swing.GroupLayout pnlHalamanLayout = new javax.swing.GroupLayout(pnlHalaman);
-        pnlHalaman.setLayout(pnlHalamanLayout);
-        pnlHalamanLayout.setHorizontalGroup(
-            pnlHalamanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1160, Short.MAX_VALUE)
-        );
-        pnlHalamanLayout.setVerticalGroup(
-            pnlHalamanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 524, Short.MAX_VALUE)
-        );
+        pnlHalaman.setLayout(new java.awt.CardLayout());
 
         getContentPane().add(pnlHalaman, java.awt.BorderLayout.CENTER);
 

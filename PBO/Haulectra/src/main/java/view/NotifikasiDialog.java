@@ -77,8 +77,9 @@ public class NotifikasiDialog extends javax.swing.JDialog {
         pnlTeks.setLayout(pnlTeksLayout);
         pnlTeksLayout.setHorizontalGroup(
             pnlTeksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblPesan, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(lblDetail, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGap(0, 248, Short.MAX_VALUE)
+            .addComponent(lblPesan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblDetail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         pnlTeksLayout.setVerticalGroup(
             pnlTeksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

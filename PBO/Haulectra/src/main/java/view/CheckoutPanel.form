@@ -25,15 +25,14 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,49,0,0,4,44"/>
   </AuxValues>
 
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="pnlKepala" min="-2" pref="1004" max="-2" attributes="0"/>
+          <Component id="pnlKepala" max="32767" attributes="0"/>
           <Group type="102" attributes="0">
-              <Component id="scrKiri" min="-2" pref="652" max="-2" attributes="0"/>
+              <Component id="scrKiri" max="32767" attributes="0"/>
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
               <Component id="pnlKanan" min="-2" max="-2" attributes="0"/>
           </Group>
@@ -44,7 +43,7 @@
           <Group type="102" attributes="0">
               <Component id="pnlKepala" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="scrKiri" min="-2" pref="715" max="-2" attributes="0"/>
+                  <Component id="scrKiri" max="32767" attributes="0"/>
                   <Component id="pnlKanan" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -65,7 +64,20 @@
         <Property name="opaque" type="boolean" value="false"/>
       </Properties>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="lblSub" max="32767" attributes="0"/>
+              <Component id="lblJudul" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="lblSub" min="-2" max="-2" attributes="0"/>
+              <Component id="lblJudul" min="-2" max="-2" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblJudul">
           <Properties>
@@ -77,11 +89,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Checkout"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-              <GridBagConstraints gridX="0" gridY="0" gridWidth="1" gridHeight="1" fill="2" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="17" weightX="1.0" weightY="0.0"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="lblSub">
           <Properties>
@@ -92,11 +99,6 @@
               <Color blue="85" green="70" red="66" type="rgb"/>
             </Property>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-              <GridBagConstraints gridX="0" gridY="1" gridWidth="1" gridHeight="1" fill="2" ipadX="0" ipadY="0" insetsTop="4" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="17" weightX="0.0" weightY="0.0"/>
-            </Constraint>
-          </Constraints>
         </Component>
       </SubComponents>
     </Container>
@@ -157,21 +159,15 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="lblUbahAlamat" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblAlamatJudul" min="-2" pref="610" max="-2" attributes="0"/>
-                              <Component id="lblPenerima" min="-2" pref="610" max="-2" attributes="0"/>
-                              <Component id="lblAlamat" min="-2" pref="610" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="lblAlamatJudul" min="0" max="32767" attributes="0"/>
+                      <Component id="lblPenerima" min="0" max="32767" attributes="0"/>
+                      <Component id="lblAlamat" min="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblUbahAlamat" min="-2" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <Component id="lblUbahAlamat" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
                           <Component id="lblAlamatJudul" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Component id="lblPenerima" min="-2" max="-2" attributes="0"/>
@@ -253,8 +249,8 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblBarangJudul" min="-2" pref="631" max="-2" attributes="0"/>
-                      <Component id="scrBarang" min="-2" pref="631" max="-2" attributes="0"/>
+                      <Component id="lblBarangJudul" min="0" pref="631" max="32767" attributes="0"/>
+                      <Component id="scrBarang" min="0" pref="631" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -362,15 +358,15 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblMetodeJudul" min="-2" pref="631" max="-2" attributes="0"/>
+                      <Component id="lblMetodeJudul" min="0" pref="631" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
                           <Component id="rbTransfer" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
                           <Component id="rbEwallet" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                          <Component id="pnlMetodeSisa" min="-2" pref="469" max="-2" attributes="0"/>
+                          <Component id="pnlMetodeSisa" min="0" pref="469" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="lblErrMetode" min="-2" pref="631" max="-2" attributes="0"/>
+                      <Component id="lblErrMetode" min="0" pref="631" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -382,7 +378,7 @@
                               <Component id="rbTransfer" min="-2" max="-2" attributes="0"/>
                               <Component id="rbEwallet" min="-2" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+                                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                   <Component id="pnlMetodeSisa" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -500,9 +496,9 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblVoucherJudul" min="-2" pref="631" max="-2" attributes="0"/>
-                      <Component id="cmbVoucher" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblVoucherInfo" min="-2" pref="631" max="-2" attributes="0"/>
+                      <Component id="lblVoucherJudul" min="0" pref="631" max="32767" attributes="0"/>
+                      <Component id="cmbVoucher" max="32767" attributes="0"/>
+                      <Component id="lblVoucherInfo" min="0" pref="631" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -584,7 +580,7 @@
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="42" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="46" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
               </Layout>
@@ -643,30 +639,30 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblRingkasan" min="-2" pref="290" max="-2" attributes="0"/>
+                  <Component id="lblRingkasan" min="0" pref="290" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="lblSubtotalTeks" min="-2" pref="256" max="-2" attributes="0"/>
-                      <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+                      <Component id="lblSubtotalTeks" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="12" pref="12" max="32767" attributes="0"/>
                       <Component id="lblSubtotal" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Component id="lblOngkirTeks" min="-2" pref="256" max="-2" attributes="0"/>
-                      <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+                      <Component id="lblOngkirTeks" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="12" pref="12" max="32767" attributes="0"/>
                       <Component id="lblOngkir" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Component id="lblPotonganTeks" min="-2" pref="256" max="-2" attributes="0"/>
-                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      <Component id="lblPotonganTeks" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="12" pref="12" max="32767" attributes="0"/>
                       <Component id="lblPotongan" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="sepTotal" min="-2" pref="290" max="-2" attributes="0"/>
+                  <Component id="sepTotal" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="lblTotalTeks" min="-2" pref="256" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="lblTotalTeks" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="12" pref="12" max="32767" attributes="0"/>
                       <Component id="lblTotal" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="btnBuatPesanan" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnKembali" min="-2" pref="290" max="-2" attributes="0"/>
+                  <Component id="btnBuatPesanan" max="32767" attributes="0"/>
+                  <Component id="btnKembali" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -674,28 +670,25 @@
                   <Group type="102" attributes="0">
                       <Component id="lblRingkasan" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="2" attributes="0">
                           <Component id="lblSubtotalTeks" min="-2" max="-2" attributes="0"/>
                           <Component id="lblSubtotal" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="2" attributes="0">
                           <Component id="lblOngkirTeks" min="-2" max="-2" attributes="0"/>
                           <Component id="lblOngkir" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="2" attributes="0">
                           <Component id="lblPotonganTeks" min="-2" max="-2" attributes="0"/>
                           <Component id="lblPotongan" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
                       <Component id="sepTotal" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                              <Component id="lblTotalTeks" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="lblTotalTeks" min="-2" max="-2" attributes="0"/>
                           <Component id="lblTotal" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
@@ -870,7 +863,7 @@
                 </Property>
                 <Property name="focusPainted" type="boolean" value="false"/>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[120, 40]"/>
+                  <Dimension value="[120, 42]"/>
                 </Property>
               </Properties>
               <Events>

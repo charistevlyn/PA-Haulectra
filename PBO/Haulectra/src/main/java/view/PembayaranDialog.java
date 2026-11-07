@@ -49,6 +49,7 @@ public class PembayaranDialog extends javax.swing.JDialog {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         pnlLatar = new javax.swing.JPanel();
         pnlIsi = new javax.swing.JPanel();
@@ -85,29 +86,30 @@ public class PembayaranDialog extends javax.swing.JDialog {
 
         pnlTagihan.setBackground(new java.awt.Color(245, 247, 251));
         pnlTagihan.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(228, 231, 236)), javax.swing.BorderFactory.createEmptyBorder(14, 16, 14, 16)));
+        pnlTagihan.setLayout(new java.awt.GridBagLayout());
 
         lblTagihanTeks.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         lblTagihanTeks.setForeground(new java.awt.Color(102, 112, 133));
         lblTagihanTeks.setText("Total tagihan");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.weightx = 1.0;
+        pnlTagihan.add(lblTagihanTeks, gridBagConstraints);
 
         lblTotal.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTotal.setForeground(new java.awt.Color(31, 94, 219));
         lblTotal.setText("Rp0");
-
-        javax.swing.GroupLayout pnlTagihanLayout = new javax.swing.GroupLayout(pnlTagihan);
-        pnlTagihan.setLayout(pnlTagihanLayout);
-        pnlTagihanLayout.setHorizontalGroup(
-            pnlTagihanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblTagihanTeks, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(lblTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        pnlTagihanLayout.setVerticalGroup(
-            pnlTagihanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlTagihanLayout.createSequentialGroup()
-                .addComponent(lblTagihanTeks)
-                .addGap(4, 4, 4)
-                .addComponent(lblTotal))
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(4, 0, 0, 0);
+        pnlTagihan.add(lblTotal, gridBagConstraints);
 
         lblNominal.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblNominal.setForeground(new java.awt.Color(52, 64, 84));
@@ -136,7 +138,7 @@ public class PembayaranDialog extends javax.swing.JDialog {
             pnlIsiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblSub, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(pnlTagihan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnlTagihan, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblNominal, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(txtNominal, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(lblErrNominal, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)

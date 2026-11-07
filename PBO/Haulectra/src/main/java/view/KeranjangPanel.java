@@ -20,6 +20,12 @@ public class KeranjangPanel extends javax.swing.JPanel implements Halaman {
         this.induk = induk;
         initComponents();
         scrDaftar.getVerticalScrollBar().setUnitIncrement(16);
+        scrDaftar.getViewport().addComponentListener(new java.awt.event.ComponentAdapter() {
+            @Override
+            public void componentResized(java.awt.event.ComponentEvent e) {
+                sesuaikanLebar();
+            }
+        });
     }
 
     @Override
@@ -39,9 +45,18 @@ public class KeranjangPanel extends javax.swing.JPanel implements Halaman {
         lblSubtotalNilai.setText(Gaya.rupiah(k.getSubtotal()));
         btnCheckout.setEnabled(!kosong);
         btnCheckout.setBackground(kosong ? Gaya.GARIS : Gaya.BIRU);
+        sesuaikanLebar();
+        induk.perbaruiKeranjang();
+    }
+
+    // Lebar daftar barang mengikuti lebar jendela.
+    private void sesuaikanLebar() {
+        int w = scrDaftar.getViewport().getWidth();
+        if (w <= 0) return;
+        pnlDaftar.setPreferredSize(null);
+        pnlDaftar.setPreferredSize(new java.awt.Dimension(w, pnlDaftar.getPreferredSize().height));
         pnlDaftar.revalidate();
         pnlDaftar.repaint();
-        induk.perbaruiKeranjang();
     }
 
     void ubahJumlah(Pesanan.Item item, int jumlahBaru) {
@@ -107,13 +122,13 @@ public class KeranjangPanel extends javax.swing.JPanel implements Halaman {
         pnlKepala.setLayout(pnlKepalaLayout);
         pnlKepalaLayout.setHorizontalGroup(
             pnlKepalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(lblSub)
+            .addComponent(lblSub, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblJudul, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         pnlKepalaLayout.setVerticalGroup(
             pnlKepalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblJudul)
             .addComponent(lblSub)
+            .addComponent(lblJudul)
         );
 
         pnlTengah.setBackground(new java.awt.Color(255, 255, 255));
@@ -125,18 +140,7 @@ public class KeranjangPanel extends javax.swing.JPanel implements Halaman {
 
         pnlDaftar.setBackground(new java.awt.Color(245, 247, 251));
         pnlDaftar.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-
-        javax.swing.GroupLayout pnlDaftarLayout = new javax.swing.GroupLayout(pnlDaftar);
-        pnlDaftar.setLayout(pnlDaftarLayout);
-        pnlDaftarLayout.setHorizontalGroup(
-            pnlDaftarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 371, Short.MAX_VALUE)
-        );
-        pnlDaftarLayout.setVerticalGroup(
-            pnlDaftarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 248, Short.MAX_VALUE)
-        );
-
+        pnlDaftar.setLayout(new javax.swing.BoxLayout(pnlDaftar, javax.swing.BoxLayout.Y_AXIS));
         scrDaftar.setViewportView(pnlDaftar);
 
         pnlTengah.add(scrDaftar, "isi");
@@ -195,7 +199,6 @@ public class KeranjangPanel extends javax.swing.JPanel implements Halaman {
         pnlKanan.setBackground(new java.awt.Color(255, 255, 255));
         pnlKanan.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 20, 0, 0));
         pnlKanan.setOpaque(false);
-        pnlKanan.setLayout(new java.awt.BorderLayout());
 
         pnlRingkasan.setBackground(new java.awt.Color(255, 255, 255));
         pnlRingkasan.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(228, 231, 236)), javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20)));
@@ -244,63 +247,65 @@ public class KeranjangPanel extends javax.swing.JPanel implements Halaman {
         pnlRingkasanLayout.setHorizontalGroup(
             pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblCatatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblRingkasan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(pnlRingkasanLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblRingkasan, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(pnlRingkasanLayout.createSequentialGroup()
-                        .addComponent(lblJumlahTeks, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(lblJumlahNilai))
-                    .addGroup(pnlRingkasanLayout.createSequentialGroup()
-                        .addComponent(lblSubtotalTeks, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(24, 24, 24)
-                        .addComponent(lblSubtotalNilai))
-                    .addComponent(sepRingkasan, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCheckout, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(lblJumlahTeks)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblJumlahNilai))
+            .addGroup(pnlRingkasanLayout.createSequentialGroup()
+                .addComponent(lblSubtotalTeks)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblSubtotalNilai))
+            .addComponent(sepRingkasan)
+            .addComponent(btnCheckout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         pnlRingkasanLayout.setVerticalGroup(
             pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblCatatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(pnlRingkasanLayout.createSequentialGroup()
-                .addComponent(lblCatatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21)
                 .addComponent(lblRingkasan)
                 .addGap(14, 14, 14)
-                .addGroup(pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblJumlahTeks)
                     .addComponent(lblJumlahNilai))
                 .addGap(10, 10, 10)
-                .addGroup(pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlRingkasanLayout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(lblSubtotalTeks))
+                .addGroup(pnlRingkasanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lblSubtotalTeks)
                     .addComponent(lblSubtotalNilai))
                 .addGap(14, 14, 14)
                 .addComponent(sepRingkasan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(20, 20, 20)
                 .addComponent(btnCheckout, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        pnlKanan.add(pnlRingkasan, java.awt.BorderLayout.NORTH);
+        javax.swing.GroupLayout pnlKananLayout = new javax.swing.GroupLayout(pnlKanan);
+        pnlKanan.setLayout(pnlKananLayout);
+        pnlKananLayout.setHorizontalGroup(
+            pnlKananLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlRingkasan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        pnlKananLayout.setVerticalGroup(
+            pnlKananLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlRingkasan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlKanan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnlKepala, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pnlKepala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnlTengah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(pnlTengah, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0)
+                .addComponent(pnlKanan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(pnlKepala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pnlKanan, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnlTengah, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(pnlTengah, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlKanan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
