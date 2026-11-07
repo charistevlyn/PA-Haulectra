@@ -1,4 +1,4 @@
-<p align="center">
+ <p align="center">
 <img width="800" height="200" alt="IMG_7212" src="https://github.com/user-attachments/assets/6578945e-0150-40e2-8ba8-2fa129eaf09d" />
 </div>
 
@@ -39,42 +39,25 @@ Haulectra merupakan perusahaan yang bergerak di bidang *e-commerce* dengan menye
 ### Pelanggan
 | Fitur | Penjelasan |
 |---|---|
-| Login | Masuk menggunakan username dan password. Sistem memeriksa akun dan mengarahkan pengguna sesuai perannya. |
-| Registrasi akun | Membuat akun baru dengan mengisi data yang diperlukan kemmudian sistem akan memvalidasi data dan memastikan username belum digunakan. |
-| Melihat beranda | Menampilkan halaman utama sebagai akses ke katalog, keranjang, riwayat pesanan, dan profil. |
-| Melihat katalog produk | Menampilkan seluruh produk yang tersedia beserta informasinya. |
-| Mencari & memfilter produk | Mencari produk berdasarkan nama dan menyaring produk berdasarkan kategori. |
-| Melihat keranjang belanja | Menampilkan daftar produk yang telah dipilih sebelum pembelian. |
-| Mengelola keranjang | Menambah, mengubah jumlah, atau menghapus produk kemudian sistem akan menyesuaikan jumlah dengan stok tersedia. |
-| Checkout & pembayaran | Menampilkan ringkasan belanja, menghitung total, menyimpan pesanan dan pembayaran, serta mengurangi stok produk. |
-| Memilih metode pembayaran | Memilih metode pembayaran melalui transfer atau e-wallet. |
-| Membuat pesanan | Menyimpan data pesanan beserta rincian produk dalam satu transaksi. |
-| Memasukkan kode voucher | Memasukkan voucher secara opsional. Sistem memeriksa kode, minimal jumlah barang, dan masa berlaku sebelum memberikan diskon. |
-| Melihat riwayat pesanan | Menampilkan seluruh pesanan yang pernah dilakukan oleh pelanggan. |
-| Membatalkan pesanan | Membatalkan pesanan dengan mengubah statusnya menjadi Pesanan Dibatalkan. |
-| Melacak pesanan | Menampilkan nomor resi, perkiraan tanggal tiba, dan status pengiriman. |
-| Mengonfirmasi barang diterima | Mengonfirmasi penerimaan barang sehingga status pengiriman berubah menjadi Diterima. |
-| Melihat profil | Menampilkan nama, username, alamat, dan nomor telepon pelanggan. |
-| Mengubah data identitas | Memperbarui informasi pribadi, termasuk alamat tujuan pengiriman. |
+| Login dan registrasi akun | Masuk dengan username dan password, atau membuat akun baru lewat tab Daftar. Data pendaftaran dicek dulu dan username harus belum dipakai. Setelah login, aplikasi membuka tampilan sesuai jenis akun. |
+| Melihat dan mencari produk | Beranda menampilkan voucher yang sedang berlaku dan semua produk beserta foto, harga, dan stoknya. Produk bisa dicari lewat nama atau kode, dan disaring berdasarkan kategori. |
+| Mengelola keranjang | Memasukkan produk ke keranjang, mengubah jumlahnya, atau menghapusnya. Jumlah otomatis dibatasi sesuai stok yang tersedia. |
+| Checkout | Menampilkan ringkasan belanja dan total pembayaran, termasuk ongkos kirim Rp20.000. Pelanggan memilih metode pembayaran (transfer atau e-wallet) dan, kalau mau, voucher. Voucher dicek dulu: minimal jumlah barang dan masa berlakunya. Saat pesanan dibuat, pesanan beserta rinciannya tersimpan dalam satu transaksi dan stok produk berkurang. |
+| Membayar pesanan | Mengisi nominal sesuai total tagihan, lalu status pesanan menjadi Diproses. Kalau belum siap, pilih Bayar Nanti dan bayar kapan saja dari Riwayat Pesanan. |
+| Melihat riwayat dan melacak pesanan | Menampilkan semua pesanan pelanggan beserta statusnya: Menunggu Pembayaran, Diproses, Dikirim, Selesai, atau Pesanan Dibatalkan. Setelah dikirim, nomor resi dan perkiraan tanggal tiba bisa dilihat di detail pesanan. |
+| Mengelola pesanan | Membatalkan pesanan yang belum dibayar (stok dikembalikan), atau menekan Pesanan Sudah Diterima saat pesanan berstatus Dikirim sehingga statusnya menjadi Selesai. |
+| Mengelola profil | Melihat nama, username, no. telepon, dan alamat, serta mengubahnya. Alamat di profil dipakai sebagai alamat tujuan pengiriman. |
 | Logout | Mengakhiri sesi dan kembali ke halaman login. |
 
 ### Admin
 | Fitur | Penjelasan |
 |---|---|
-| Login | Masuk melalui halaman login dan diarahkan ke dashboard admin sesuai perannya. |
-| Melihat dashboard | Menampilkan ringkasan aktivitas aplikasi serta akses ke menu produk, promo, pesanan, pengiriman, dan pelanggan. |
-| Melihat daftar produk | Menampilkan produk beserta nama, kategori, harga, dan stok. |
-| Menambah produk | Menambahkan produk baru dengan mengisi data yang divalidasi sebelum disimpan. |
-| Mengubah produk | Memilih produk dan memperbarui informasi produknya. |
-| Menghapus produk | Menghapus produk setelah memberikan konfirmasi. |
-| Melihat daftar promo | Menampilkan seluruh voucher atau promo yang telah dibuat. |
-| Menambah promo | Membuat voucher dengan mengisi kode, jenis dan besar diskon, minimal jumlah barang, serta tanggal berlaku. |
-| Mengubah promo | Memperbarui informasi voucher yang tersedia. |
-| Menghapus promo | Menghapus voucher setelah memberikan konfirmasi. |
-| Melihat detail resi pengiriman | Menampilkan daftar pengiriman beserta informasi resinya. |
-| Mengatur status pengiriman | Memperbarui status pengiriman. Nomor resi dibuat otomatis saat pesanan dikirim. |
-| Melihat daftar pesanan | Menampilkan seluruh pesanan pelanggan serta memperbarui status pesanan dan mengonfirmasi pembayaran secara manual. |
-| Melihat data pelanggan | Menampilkan daftar pelanggan yang telah terdaftar tanpa fitur pengubahan data. |
+| Login | Masuk lewat halaman login yang sama dengan pelanggan, lalu langsung diarahkan ke halaman admin dengan menu samping: Kelola Produk, Kelola Promo, Kelola Pesanan, dan Data Pelanggan. |
+| Mengelola produk | Melihat daftar produk (foto, nama, kategori, harga, stok), menambah produk baru, mengubah, atau menghapusnya. Data divalidasi sebelum disimpan dan penghapusan perlu konfirmasi. Produk yang sudah pernah dipesan tidak bisa dihapus. |
+| Mengelola promo | Melihat daftar voucher, membuat voucher baru (kode, jenis dan besar diskon, minimal jumlah barang, tanggal berlaku), mengubahnya, atau menghapusnya setelah konfirmasi. |
+| Mengelola pesanan dan pengiriman | Melihat semua pesanan pelanggan, mencari atau menyaringnya berdasarkan status, dan membuka detailnya termasuk nomor resi. Pesanan yang sudah dibayar (Diproses) dikirim lewat tombol Kirim: nomor resi dibuat otomatis, estimasi tiba 3 hari, dan status menjadi Dikirim. |
+| Mencetak laporan pesanan ke Excel | Lewat tombol Cetak Laporan di halaman Kelola Pesanan, admin memilih status pesanan dan kolom yang diinginkan, lalu menyimpannya sebagai file untuk Microsoft Excel. Jumlah pesanan dan total nilainya dihitung otomatis di bagian bawah laporan. |
+| Melihat data pelanggan | Menampilkan daftar pelanggan yang sudah terdaftar (kode, nama, username, no. telepon, alamat, tanggal bergabung). Hanya untuk dilihat, tanpa fitur mengubah data. |
 | Logout | Mengakhiri sesi admin dan kembali ke halaman login. |
 
 ## ↳ Tech Stack
@@ -90,9 +73,6 @@ Teknologi yang digunakan dalam proses pengembangan aplikasi Haulectra meliputi:
 | Version Control | **Git** | Digunakan untuk mencatat perubahan kode dan mengelola versi project selama proses pengembangan. |
 | Platform Kolaborasi | **GitHub** | Digunakan untuk menyimpan repository project dan memudahkan kolaborasi antaranggota tim. |
 | Web Browser | **Google Chrome** | Digunakan untuk mencari referensi, dokumentasi, dan informasi pendukung selama pengerjaan project. |
-| Pengolah Dokumen | **Microsoft Word** | Digunakan untuk menyusun laporan project, mulai dari penjelasan program hingga dokumentasi hasil pengerjaan. |
-| Desain Presentasi | **Canva** | Digunakan untuk membuat slide deck presentasi yang menjelaskan project Haul. |
-| Pengolah Spreadsheet | **Microsoft Excel** | Digunakan untuk membuat catatan dan rekapitulasi laporan penjualan agar data transaksi lebih mudah dikelola. |
 | Arsitektur | **MVC dan DAO** | Digunakan untuk memisahkan bagian tampilan, alur program, model data, dan akses database. |
 | Library | **Hibernate ORM 6.6.4.Final** | Digunakan untuk menghubungkan class Java dengan tabel database dan mempermudah pengelolaan data. |
 | Library | **JCalendar 1.4** | Digunakan untuk menyediakan komponen kalender pada form pengelolaan tanggal promo. |
@@ -187,63 +167,64 @@ Teknologi yang digunakan dalam proses pengembangan aplikasi Haulectra meliputi:
 
 ## ↳ Struktur Program/Package
 Dalam penyusunan Haul, konsep MVC (Model View Controller) diterapkan untuk mengatur susunan program berdasarkan fungsi masing-masing. Melalui konsep ini, pengelolaan data, penyajian tampilan, dan jalannya proses program ditempatkan pada bagian yang berbeda agar kode lebih tertata dan memudahkan pemeliharaan maupun penambahan fitur.
-```
+
+```java
 HaulApp/
-├── config/
-│   ├── JpaUtil.java
-│   ├── Koneksi.java
-│   ├── Konfigurasi.java
-│   └── TestKoneksi.java
-├── controller/
-│   ├── AuthController.java
-│   ├── PelangganController.java
-│   ├── PesananController.java
-│   ├── ProdukController.java
-│   ├── PromoController.java
-│   └── ValidasiException.java
-├── main/
-│   └── MainApp.java
-├── model/
-│   ├── Pengguna.java
+├── config/                        ← pengaturan dan koneksi ke database
+│   ├── JpaUtil.java               ← pengelola koneksi JPA (Hibernate)
+│   ├── Koneksi.java               ← koneksi JDBC ke MySQL
+│   ├── Konfigurasi.java           ← pengaturan aplikasi (database, ongkir, kategori)
+│   └── TestKoneksi.java           ← uji coba koneksi ke database
+├── controller/                    ← logika dan alur kerja aplikasi
+│   ├── AuthController.java        ← login dan registrasi
+│   ├── PelangganController.java   ← data pelanggan dan profil
+│   ├── PesananController.java     ← checkout, pesanan, pembayaran, pengiriman
+│   ├── ProdukController.java      ← kelola produk
+│   ├── PromoController.java       ← kelola promo dan voucher
+│   └── ValidasiException.java     ← pesan kesalahan untuk input yang tidak valid
+├── main/                          ← pintu masuk aplikasi
+│   └── MainApp.java               ← menjalankan aplikasi dan membuka halaman login
+├── model/                         ← data toko dan akses ke database
+│   ├── Pengguna.java              ← induk dari Admin dan Pelanggan
 │   ├── Admin.java
 │   ├── Pelanggan.java
 │   ├── Produk.java
-│   ├── Promo.java
-│   ├── Pesanan.java
-│   ├── DAO.java
+│   ├── Promo.java                 ← data promo dan voucher
+│   ├── Pesanan.java               ← data pesanan beserta statusnya
+│   ├── DAO.java                   ← kontrak dasar akses data
 │   ├── PenggunaDAO.java
-│   ├── ProdukDAOJdbc.java
-│   ├── ProdukDAOJpa.java
+│   ├── ProdukDAOJdbc.java         ← akses data produk lewat JDBC
+│   ├── ProdukDAOJpa.java          ← akses data produk lewat JPA
 │   ├── PromoDAO.java
 │   ├── PesananDAO.java
-│   └── GambarProdukDAO.java
-└── view/
-    ├── LoginView.java
-    ├── AdminView.java
-    ├── PelangganView.java
-    ├── BerandaPanel.java
+│   └── GambarProdukDAO.java       ← akses foto produk
+└── view/                          ← seluruh tampilan aplikasi
+    ├── LoginView.java             ← halaman login dan daftar
+    ├── AdminView.java             ← jendela utama admin
+    ├── PelangganView.java         ← jendela utama pelanggan
+    ├── BerandaPanel.java          ← beranda: promo dan katalog produk
     ├── KeranjangPanel.java
-    ├── CheckoutPanel.java
-    ├── RiwayatPanel.java
+    ├── CheckoutPanel.java         ← checkout: voucher dan metode bayar
+    ├── RiwayatPanel.java          ← riwayat dan status pesanan
     ├── ProfilPanel.java
-    ├── ProdukPanel.java
-    ├── PromoPanel.java
-    ├── PesananAdminPanel.java
+    ├── ProdukPanel.java           ← kelola produk (admin)
+    ├── PromoPanel.java            ← kelola promo (admin)
+    ├── PesananAdminPanel.java     ← kelola pesanan dan pengiriman (admin)
     ├── DataPelangganPanel.java
-    ├── ProdukDialog.java
-    ├── PromoDialog.java
+    ├── ProdukDialog.java          ← form tambah dan ubah produk
+    ├── PromoDialog.java           ← form tambah dan ubah promo
     ├── DetailProdukDialog.java
-    ├── DetailPesananDialog.java
+    ├── DetailPesananDialog.java   ← rincian pesanan dan nomor resi
     ├── PembayaranDialog.java
     ├── KonfirmasiDialog.java
     ├── NotifikasiDialog.java
-    ├── CetakLaporanDialog.java
+    ├── CetakLaporanDialog.java    ← cetak laporan pesanan ke Excel
     ├── KartuProduk.java
     ├── KartuPromo.java
     ├── BarisKeranjang.java
-    ├── KolomAksi.java
-    ├── Gaya.java
-    └── Halaman.java
+    ├── KolomAksi.java             ← kolom tombol aksi pada tabel
+    ├── Gaya.java                  ← warna dan gaya tampilan
+    └── Halaman.java               ← kerangka dasar halaman (interface)
 ```
 
 ## ↳ 4 Pilar OOP
